@@ -1,0 +1,126 @@
+.font-sans {
+    font-family: Lato
+}
+
+.subpixel-antialiased {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto
+}
+
+.containerl,
+body.terms main {
+    width: 100%
+}
+
+@media (min-width: 640px) {
+
+    .containerl,
+    body.terms main {
+        max-width: 640px
+    }
+}
+
+@media (min-width: 768px) {
+
+    .containerl,
+    body.terms main {
+        max-width: 768px
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .containerl,
+    body.terms main {
+        max-width: 1024px
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .containerl,
+    body.terms main {
+        max-width: 1280px
+    }
+}
+
+.px-4 {
+
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+.justify-center {
+    -webkit-box-pack: center;
+    justify-content: center
+}
+
+.items-center {
+    -webkit-box-align: center;
+    align-items: center
+}
+
+.font-mont {
+    font-family: Montserrat
+}
+
+.bg-teal-darker {
+    background-color: #18A582
+}
+
+.text-white {
+    color: #fff
+}
+
+.modal_box {
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 12%);
+    border-radius: 16px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-color: #E6E8EE;
+    background-color: #fff;
+    width: 50% !important;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.inputStyle {
+    width: 100%;
+    fontSize: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-width: 1px;
+    border-color: #E6E8EE;
+    border: 0 solid;
+
+}
+
+
+.myPadding {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.mx-auto-l {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-3xll {
+    fontSize: 1.75rem;
+}
+
+.mb-4l{
+    marginBottom: 1rem;
+}
+
+.py-4l{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.text-teal-darkerl {
+    color: #18A582;
+}
+

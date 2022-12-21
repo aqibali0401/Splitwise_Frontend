@@ -1,0 +1,82 @@
+.contentBlock {
+    /* border: 2px solid red; */
+    float: right;
+    max-width: 360px;
+    padding-left: 15px;
+}
+
+.inlineClass {
+    display: flex;
+    /* border: 3px solid pink; */
+}
+
+
+
+#fat_rabbit .flex_container.blank_page {
+    line-height: 36px;
+    font-size: 18px;
+    width: auto;
+    max-width: 600px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.emailImg{
+    vertical-align: middle;
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+    margin-right: 2px;
+}
+
+.emailBox{
+    vertical-align: middle;
+    font-size: 18px;
+    height: 19px;
+    width: 70%;
+    margin-bottom: 0;
+    border: 1px solid black;
+    padding: 15px 1px !important;
+    border-radius: 5%;
+    margin: 5px 2px;
+}
+
+.displayFlexEmailName{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding: 2px 5px 2px 5px;
+}
+
+.removeCross{
+    color: red;
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 5px;
+    text-decoration: none !important;    
+    cursor: pointer;
+}
+
+.addPersonColor{
+    display: block;
+    margin: 15px 0 10px;
+    font-size: 13px;
+    line-height: 13px;
+    color: #0088cc;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+ 
+.dropdownColor{
+    color: black;
+    background-color: white;
+}
+.dropdownColor:hover{
+    background-color: white;
+    color: black;
+}
+
+.hideInputBox{
+    display: none;
+}

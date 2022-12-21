@@ -1,0 +1,87 @@
+  {/* // my header */}
+        {/* <div class="header my-container">
+          <a href="/" className='logo-position'>
+            <img className='logo-size' src={companyLogo} alt="BigCo Inc. logo" />
+          </a>
+          <div id="guest" class="topright login-signup-buttons">
+            <div className="login-button action-button">
+              <a className="login ls-button text-teal px-4 block cursor-pointer font-mont font-semibold" href="/login">Log in</a>
+            </div>
+            <div className="signup-button action-button">
+              <a className="sighup ls-button text-white bg-teal   px-3 py-2 sm:px-5 sm:py-3 rounded shadow sm-cta-button" href="/signup">Sign up</a>
+            </div>
+          </div>
+        </div> */}
+
+
+
+
+           {/* <div className=''>
+          <div className='bg-facets bg-charcoal text-white l-box-position'>
+          <div className='flex-col justify-between'>
+          <div>
+            <h1> Track balances</h1>
+
+          </div>
+          </div>
+          </div>
+        </div> */}
+
+
+
+
+
+
+        ///  app css 
+        .App {
+  text-align: center;
+  font-family: Montserrat;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  fontSize: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+i {
+  cursor: pointer;
+}
+
+
+
+
+
+onChange="showSecondaryFields()      -> ise karna he
+
+ Don't use USD for currency?    -> ise karna he

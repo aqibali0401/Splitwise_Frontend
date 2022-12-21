@@ -1,38 +1,97 @@
-.App {
+/* .text-teal {
+  color: #1CC29F
+}
+
+.text-teal-darker {
+  color: #18A582
+}
+
+.text-teal-darkest {
+  color: #137863
+}
+
+.text-white {
+  color: white
+}
+
+.my-container {
+  width: 70%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-size {
+  height: 50px;
+  width: 150px;
+}
+
+.logo-position {
+  position: absolute;
+  left: 16px;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.login {
+  padding: 12px;
+}
+
+.sighup {
+  background-color: #1CC29F;
+  padding: 12px;
+  box-shadow: 0 2px 0 0 rgb(55 59 63 / 50%);
+}
+
+.signup-button :hover {
+  marginTop: 2px;
+  marginBottom: -2px;
+  box-shadow: none
+}
+
+.action-button {
+  width: 200px;
+  margin: 0 auto;
+  display: inline
+}
+
+.signup-button {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ls-button {
+  border-radius: 5px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.login-signup-buttons {
+  width: 200px;
+  margin: 0 auto;
+  display: inline;
+} */
+
+
+  
+html {
+  box-sizing: border-box;
+  font-family: sans-serif
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit
 }
