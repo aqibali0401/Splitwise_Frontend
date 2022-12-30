@@ -15,10 +15,41 @@ const Dashbord = (props) => {
         setStyle(style === "addFriend" ? "" : "addFriend");
     };
 
+    // send invite 
+
+    const [credentials, setCredentials] = useState({ email: "" })
+
+    const handleSubmit = async (e) => {
+        console.log("invite friend called only");
+        e.preventDefault();
+        const { email } = credentials;
+        const authToken = localStorage.getItem('token');
+        const response = await fetch(`http://localhost:5000/api/v1/auth/inviteFriend`, {
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.             
+            headers: {
+                'Content-Type': 'application/json',
+                'authorization': `Bearer ${authToken}`
+            },
+            body: JSON.stringify({ email })
+        });
+        const json = await response.json();
+        console.log("json in invite friend ->>", json);
+        if (json.success) {
+            console.log("invite friend called successfully");
+            props.showAlert("Invite friend link send successfully", "success");
+        } else {
+            props.showAlert("Invalid email id or some error occur!", "danger");
+        }
+    }
+
+    const onChange = (e) => {
+        setCredentials({ ...credentials, [e.target.name]: e.target.value });
+    }
+
     const { groups, fetchGroups } = useContext(GroupContext);
     const { friends, fetchFriends } = useContext(FriendContext);
 
-    console.log('friends', friends);
+    console.log('friends ->', friends);
 
     const [friendEmail, setFriendEmail] = useState("")
 
@@ -52,10 +83,7 @@ const Dashbord = (props) => {
         }
     };
 
- 
-    // useEffect(() => {
-    //     fetchFriends();
-    // }, []);
+
 
     return (
         <div>
@@ -76,6 +104,7 @@ const Dashbord = (props) => {
 
                                     {groups || groups.length > 0 ?
                                         <>
+
                                             {groups.map((group) => {
                                                 return (
 
@@ -136,19 +165,19 @@ const Dashbord = (props) => {
                                         <>
                                             {friends.map((friend) => {
                                                 return (
-                                                    <Link to="#/friends/32744573" key={friend._id}
+
+                                                    <Link to="" key={friend.friend._id}
                                                         data-active="true">
                                                         <i className="icon-tag"></i>
-                                                        {friend.userName? friend.userName : "Anonymous user"}
+                                                        {friend.friend.userName ? friend.friend.userName : "Anonymous user"}
                                                     </Link>
+
                                                 )
                                             })}
                                         </>
                                         :
                                         ""
                                     }
-
-
                                 </div>
 
 
@@ -162,10 +191,12 @@ const Dashbord = (props) => {
                                 style={{ margin: '0 0 0 5px', border: '1px solid #ccc', 'borderTop': 'none', padding: '5px' }}>
                                 <div style={{ color: '#666', 'lineHeight': '13px', 'fontSize': '13px', height: '13px', 'marginBbottom': '5px', display: 'none' }}>
                                     Send a message to</div>
-                                <input className="invite_email" type="email" placeholder="Enter an email address"
-                                    style={{ width: '145px', margin: '0 0 5px' }} /><br />
-                                <button className="btn btn-cancel send_invite" style={{ 'fontSize': '12px', padding: '2px 6px' }}>Send
-                                    invite</button>
+                                <form onSubmit={handleSubmit}>
+                                    <input className="invite_email" type="email" id='email' name='email' onChange={onChange} placeholder="Enter an email address"
+                                        style={{ width: '145px', margin: '0 0 5px' }} /><br />
+                                    <button className="btn btn-cancel send_invite" type='submit' style={{ 'fontSize': '12px', padding: '2px 6px' }}>Send
+                                        invite</button>
+                                </form>
                                 &nbsp; <img className="invite_ajax_indicator" style={{ 'display': 'none' }}
                                     src="https://assets.splitwise.com/assets/ajax-114d999f10c3c983ba14dfc2b38f2d29c1aa3d4406abd7e73f54bffab6f33c7e.gif" />
                                 <div className="invite_success"
@@ -173,20 +204,7 @@ const Dashbord = (props) => {
                                     Invite sent! :
                                 </div>
                             </div>
-                            <div className="social">
-                                <a href="http://www.facebook.com/dialog/share?app_id=293864780643203&amp;display=popup&amp;redirect_uri=https%3A%2F%2Fwww.splitwise.com%2Fthanks&amp;href=&amp;href=https%3A%2F%2Fwww.splitwise.com"
-                                    target="_blank" data-action="share" className="btn btn-facebook">
-                                    <img
-                                        src="https://assets.splitwise.com/assets/fat_rabbit/social/facebook-1080e416a74acaf0738d7e91f16d08ef671ee62285160f5c189b9840dc753b3b.png" />
-                                    Share
-                                </a>
-                                <a href="https://twitter.com/intent/tweet?text=Splitwise+makes+it+easy+to+split+expenses+with+housemates%2C+trips%2C+groups%2C+friends%2C+and+family.+Check+it+out%21&amp;url=https%3A%2F%2Fwww.splitwise.com"
-                                    target="_blank" data-action="tweet" className="btn btn-twitter">
-                                    <img
-                                        src="https://assets.splitwise.com/assets/fat_rabbit/social/twitter-5685d291f9c14a83b9aabe241b608a48a01e9caaf6f22ae4da6c289166b098c6.png" />
-                                    Tweet
-                                </a>
-                            </div>
+
                         </div>
                     </div>
 
@@ -375,9 +393,6 @@ const Dashbord = (props) => {
 
                                             <div className="positives">
 
-
-
-
                                                 <ul>
 
                                                     <li className="relationship">
@@ -565,7 +580,7 @@ const Dashbord = (props) => {
 
             <div className="modal fade" id="send_reminder"></div>
             <div className="modal fade" id="delete_friendship"></div>
-            <div className="modal fade" id="invite_friends">
+            {/* <div className="modal fade" id="invite_friends">
                 <div className="input-data"></div>
                 <div className="padding_wrapper clearfix" style={{ 'border': '2px solid red' }}>
                     <h3>
@@ -581,10 +596,7 @@ const Dashbord = (props) => {
                             <ul className="token-input-list-mac">
                                 <li className="token-input-input-token-mac"><input type="text" autoComplete="off"
                                     id="token-input-invite-input" placeholder="Enter names or email addresses"
-                                    style={{ outline: 'none', width: '300px' }} />
-                                    {/* <tester
-                                        style={{position: 'absolute', top: '-9999px', left: '-9999px', width: 'auto', fontSize: '14px', 'fontFamily': 'Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif', 'fontWeight': '400', 'letterSpacing': '0px', 'whiteSpace': 'nowrap'}}>
-                                    </tester> */}
+                                    style={{ outline: 'none', width: '300px' }} /> 
                                 </li>
                             </ul><input type="text" className="invite-input" id="invite-input"
                                 placeholder="Enter names or email addresses" style={{ display: 'none' }} />
@@ -604,16 +616,11 @@ const Dashbord = (props) => {
                 <div className="friends_on_splitwise">
                     &nbsp;
                 </div>
-            </div>
+            </div> */}
             <div className="modal fade" id="fullscreen_ad"></div>
             <div id="first_launch"></div>
-
-            {/* <!-- END MODALS --> */}
-
-
-
-            {/* this is forom end last  line  */}
-
+            <br />
+            <br />
         </div>
     )
 }
