@@ -53,8 +53,8 @@
 }
 
 .signup-button :hover {
-  marginTop: 2px;
-  marginBottom: -2px;
+  margin-top: 2px;
+  margin-bottom: -2px;
   box-shadow: none
 }
 

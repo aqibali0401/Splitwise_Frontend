@@ -5,18 +5,18 @@ import '../Css/signUp.css';
 
 const Signup = (props) => {
 
-  const [credentials, setCredentials] = useState({ name: '', email: "", password: "", cpassword: "" })
+  const [credentials, setCredentials] = useState({ userName: '', email: "", password: "", cpassword: "" })
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { name, email, password } = credentials;
+    const { userName, email, password } = credentials;
     const response = await fetch(`http://localhost:5000/api/v1/auth/createuser`, {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.             
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ name, email, password })
+      body: JSON.stringify({ userName, email, password })
     });
     const json = await response.json();
     if (json.success) {
@@ -45,25 +45,25 @@ const Signup = (props) => {
               <h2>Introduce yourself</h2>
               <form className="form-stacked" id="new_user" onSubmit={handleSubmit} >
 
-                <label htmlFor="name" style={{ 'fontSize': '24px', 'lineHeight': '140%', margin: '16px 0 5px' }}>Hi there! My name is</label>
+                <label htmlhtmlFor="userName" style={{ 'fontSize': '24px', 'lineHeight': '140%', margin: '16px 0 5px' }}>Hi there! My name is</label>
                 <input tabIndex="1" autoComplete="off" style={{ fontSize: '32px', height: '42px' }}
-                  type="text" id="name" name='name' required onChange={onChange} />
+                  type="text" id="userName" name='userName' required onChange={onChange} />
 
 
                 <div className="secondary_fields" style={{}}>
                   <div>
-                    <label htmlFor="email" className="form-label fontsize18px"> Here’s my <strong>email address</strong>:</label>
+                    <label htmlhtmlFor="email" className="form-label fontsize18px"> Here’s my <strong>email address</strong>:</label>
                     <input tabIndex="2" className='signupEmail' autoComplete="off" type="email" id="email" name='email' required onChange={onChange} />
 
                   </div>
 
                   <div>
-                    <label htmlFor="password" className="form-label fontsize18px"> And here’s my <strong>password</strong>:</label>
+                    <label htmlhtmlFor="password" className="form-label fontsize18px"> And here’s my <strong>password</strong>:</label>
                     <input tabIndex="3" autoComplete="off" className='signupEmail' type="password" id="password" name='password' required onChange={onChange} />
                   </div>
 
                   {/* <div>
-                    <label htmlFor="cpassword" className="form-label fontsize18px">Confirm Password</label>
+                    <label htmlhtmlFor="cpassword" className="form-label fontsize18px">Confirm Password</label>
                     <input tabIndex="3" autoComplete="off" type="password" id="password" name='cpassword' onChange={onChange} />
                   </div> */}
 

@@ -86,7 +86,7 @@ body.terms main {
 
 .inputStyle {
     width: 100%;
-    fontSize: 1rem;
+    font-size: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
@@ -109,11 +109,11 @@ body.terms main {
 }
 
 .text-3xll {
-    fontSize: 1.75rem;
+    font-size: 1.75rem;
 }
 
 .mb-4l{
-    marginBottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .py-4l{

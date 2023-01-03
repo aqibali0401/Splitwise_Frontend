@@ -12,7 +12,7 @@ main {
 }
 
 h1 {
-    fontSize: 2em;
+    font-size: 2em;
     margin: 0.67em 0
 }
 
@@ -22,11 +22,11 @@ a {
 
 b,
 strong {
-    fontWeight: bolder
+    font-weight: bolder
 }
 
 small {
-    fontSize: 80%
+    font-size: 80%
 }
 
 img {
@@ -36,8 +36,8 @@ img {
 button,
 input {
     font-family: inherit;
-    fontSize: 100%;
-    lineHeight: 1.15;
+    font-size: 100%;
+    line-height: 1.15;
     margin: 0;
     overflow: visible
 }
@@ -141,7 +141,7 @@ ul {
 
 html {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    lineHeight: 1.5
+    line-height: 1.5
 }
 
 *,
@@ -187,8 +187,8 @@ button {
 h1,
 h3,
 h4 {
-    fontSize: inherit;
-    fontWeight: inherit
+    font-size: inherit;
+    font-weight: inherit
 }
 
 a {
@@ -199,7 +199,7 @@ a {
 button,
 input {
     padding: 0;
-    lineHeight: inherit;
+    line-height: inherit;
     color: inherit
 }
 
@@ -257,11 +257,11 @@ h2,
 h3,
 h4 {
     font-family: Montserrat;
-    fontWeight: 700
+    font-weight: 700
 }
 
 p {
-    lineHeight: normal
+    line-height: normal
 }
 
 .sm-icon {
@@ -269,26 +269,26 @@ p {
 }
 
 .sm-heart {
-    marginBottom: -3px
+    margin-bottom: -3px
 }
 
 @media (min-width: 640px) {
     .sm-heart {
-        marginBottom: -9px
+        margin-bottom: -9px
     }
 }
 
 .cta-button:hover,
 .sm-cta-button:hover {
-    marginTop: 2px;
-    marginBottom: -2px;
+    margin-top: 2px;
+    margin-bottom: -2px;
     box-shadow: none
 }
 
 .cta-button,
 .sm-cta-button {
     cursor: pointer;
-    fontWeight: 600
+    font-weight: 600
 }
 
 .bg-facets {
@@ -322,12 +322,12 @@ p {
 
 @media (min-width: 768px) {
     .feature-list span {
-        fontSize: 1.25rem
+        font-size: 1.25rem
     }
 }
 
 .feature-list li>div:first-of-type {
-    marginTop: 0
+    margin-top: 0
 }
 
 .core-icon {
@@ -364,8 +364,8 @@ p {
 
 .external-link:hover {
     box-shadow: none;
-    marginTop: 2px;
-    marginBottom: -2px
+    margin-top: 2px;
+    margin-bottom: -2px
 }
 
 .animated {
@@ -1488,7 +1488,7 @@ p {
     background-color: #fff;
     margin-left: -2rem;
     margin-right: -2rem;
-    marginBottom: 1.25rem
+    margin-bottom: 1.25rem
 }
 
 .about-me-card img {
@@ -1504,18 +1504,18 @@ p {
 
 .about-me-card h3 {
     font-family: Montserrat;
-    fontWeight: 600;
-    fontSize: 1.25rem
+    font-weight: 600;
+    font-size: 1.25rem
 }
 
 .about-me-card h4 {
-    fontWeight: 700;
-    marginTop: 0.5rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
     font-family: Lato
 }
 
 .about-me-card p {
-    marginTop: 0.5rem
+    margin-top: 0.5rem
 }
 
 @media (min-width: 640px) {
@@ -1537,7 +1537,7 @@ p {
 @media (min-width: 1024px) {
     .about-me-card {
         width: 18.75rem;
-        marginTop: 2.625rem;
+        margin-top: 2.625rem;
         padding-top: 3rem;
         padding-left: 1.375rem;
         padding-right: 1.375rem
@@ -1551,15 +1551,15 @@ p {
     }
 
     .about-me-card h3 {
-        fontSize: 1.5rem
+        font-size: 1.5rem
     }
 
     .about-me-card h4 {
-        marginTop: 0.75rem
+        margin-top: 0.75rem
     }
 
     .about-me-card p {
-        marginTop: 1rem
+        margin-top: 1rem
     }
 }
 
@@ -1963,18 +1963,18 @@ body.admin input[type="submit"] {
 }
 
 .font-normal {
-    fontWeight: 400
+    font-weight: 400
 }
 
 .font-semibold,
 body.admin label,
 body.admin .admin-cta-button,
 body.admin input[type="submit"] {
-    fontWeight: 600
+    font-weight: 600
 }
 
 .font-bold {
-    fontWeight: 700
+    font-weight: 700
 }
 
 .h-4 {
@@ -2022,16 +2022,16 @@ body.admin input[type="submit"] {
 }
 
 .leading-tight {
-    lineHeight: 1.25
+    line-height: 1.25
 }
 
 .leading-normal,
 body.terms main {
-    lineHeight: 1.5
+    line-height: 1.5
 }
 
 .leading-relaxed {
-    lineHeight: 1.625
+    line-height: 1.625
 }
 
 .line-through {
@@ -2050,8 +2050,8 @@ body.terms main ul {
 
 .my-0,
 body.admin input.inline[type="submit"] {
-    marginTop: 0;
-    marginBottom: 0
+    margin-top: 0;
+    margin-bottom: 0
 }
 
 .mx-1 {
@@ -2066,8 +2066,8 @@ body.admin input.inline[type="submit"] {
 
 .my-4,
 body.admin input[type="submit"] {
-    marginTop: 1rem;
-    marginBottom: 1rem
+    margin-top: 1rem;
+    margin-bottom: 1rem
 }
 
 .mx-5 {
@@ -2076,8 +2076,8 @@ body.admin input[type="submit"] {
 }
 
 .my-6 {
-    marginTop: 1.5rem;
-    marginBottom: 1.5rem
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem
 }
 
 .mx-6 {
@@ -2108,11 +2108,11 @@ body.terms main,
 }
 
 .mt-0 {
-    marginTop: 0
+    margin-top: 0
 }
 
 .mb-0 {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .mr-1 {
@@ -2121,7 +2121,7 @@ body.terms main,
 
 .mb-1,
 body.admin label {
-    marginBottom: 0.25rem
+    margin-bottom: 0.25rem
 }
 
 .ml-1 {
@@ -2130,7 +2130,7 @@ body.admin label {
 
 .mt-2,
 #admin-header-menu {
-    marginTop: 0.5rem
+    margin-top: 0.5rem
 }
 
 .mr-2 {
@@ -2139,7 +2139,7 @@ body.admin label {
 
 .mb-2,
 body.admin h1 {
-    marginBottom: 0.5rem
+    margin-bottom: 0.5rem
 }
 
 .ml-2 {
@@ -2147,12 +2147,12 @@ body.admin h1 {
 }
 
 .mb-3 {
-    marginBottom: 0.75rem
+    margin-bottom: 0.75rem
 }
 
 .mt-4,
 body.admin label {
-    marginTop: 1rem
+    margin-top: 1rem
 }
 
 .mr-4 {
@@ -2165,7 +2165,7 @@ body.terms main ul,
 body.terms main ol,
 body.terms main table,
 body.terms main h3 {
-    marginBottom: 1rem
+    margin-bottom: 1rem
 }
 
 .ml-4 {
@@ -2173,7 +2173,7 @@ body.terms main h3 {
 }
 
 .mt-6 {
-    marginTop: 1.5rem
+    margin-top: 1.5rem
 }
 
 .mr-6 {
@@ -2182,33 +2182,33 @@ body.terms main h3 {
 
 .mb-6,
 #admin-header-menu {
-    marginBottom: 1.5rem
+    margin-bottom: 1.5rem
 }
 
 .mt-8,
 body.terms main h3 {
-    marginTop: 2rem
+    margin-top: 2rem
 }
 
 .mb-8,
 body.login div.modal_box {
-    marginBottom: 2rem
+    margin-bottom: 2rem
 }
 
 .mb-9 {
-    marginBottom: 2.25rem
+    margin-bottom: 2.25rem
 }
 
 .mt-10 {
-    marginTop: 2.5rem
+    margin-top: 2.5rem
 }
 
 .mt-16 {
-    marginTop: 4rem
+    margin-top: 4rem
 }
 
 .mt-20 {
-    marginTop: 5rem
+    margin-top: 5rem
 }
 
 .mr-0\.5 {
@@ -2216,7 +2216,7 @@ body.login div.modal_box {
 }
 
 .-mb-4 {
-    marginBottom: -1rem
+    margin-bottom: -1rem
 }
 
 .max-w-29 {
@@ -2558,11 +2558,11 @@ body.admin h1 .subtitle {
 }
 
 .text-xs {
-    fontSize: 0.75rem
+    font-size: 0.75rem
 }
 
 .text-sm {
-    fontSize: 0.875rem
+    font-size: 0.875rem
 }
 
 .text-base,
@@ -2572,29 +2572,29 @@ body.login div.modal_box input[type="password"],
 body.admin textarea,
 body.admin input[type="text"],
 body.admin select {
-    fontSize: 1rem
+    font-size: 1rem
 }
 
 .text-lg,
 body.admin h1 .subtitle {
-    fontSize: 1.125rem
+    font-size: 1.125rem
 }
 
 .text-xl {
-    fontSize: 1.25rem
+    font-size: 1.25rem
 }
 
 .text-2xl {
-    fontSize: 1.5rem
+    font-size: 1.5rem
 }
 
 .text-3xl,
 body.admin h1 {
-    fontSize: 1.75rem
+    font-size: 1.75rem
 }
 
 .text-4xl {
-    fontSize: 2.25rem
+    font-size: 2.25rem
 }
 
 .italic {
@@ -2712,7 +2712,7 @@ body.admin select:not(.inline) {
     }
 
     .sm\:text-sm {
-        fontSize: 0.875rem
+        font-size: 0.875rem
     }
 
     .sm\:w-10 {
@@ -2750,12 +2750,12 @@ body.admin select:not(.inline) {
     }
 
     .md\:my-6 {
-        marginTop: 1.5rem;
-        marginBottom: 1.5rem
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem
     }
 
     .md\:mt-0 {
-        marginTop: 0
+        margin-top: 0
     }
 
     .md\:-mx-2 {
@@ -2904,7 +2904,7 @@ body.admin select:not(.inline) {
     }
 
     .lg\:leading-relaxed {
-        lineHeight: 1.71
+        line-height: 1.71
     }
 
     .lg\:mx-0 {
@@ -2913,11 +2913,11 @@ body.admin select:not(.inline) {
     }
 
     .lg\:mt-0 {
-        marginTop: 0
+        margin-top: 0
     }
 
     .lg\:mb-0 {
-        marginBottom: 0
+        margin-bottom: 0
     }
 
     .lg\:ml-0 {
@@ -2929,15 +2929,15 @@ body.admin select:not(.inline) {
     }
 
     .lg\:mb-12 {
-        marginBottom: 3rem
+        margin-bottom: 3rem
     }
 
     .lg\:mt-24 {
-        marginTop: 6rem
+        margin-top: 6rem
     }
 
     .lg\:-mb-24 {
-        marginBottom: -6rem
+        margin-bottom: -6rem
     }
 
     .lg\:max-w-5xl {
@@ -2979,23 +2979,23 @@ body.admin select:not(.inline) {
     }
 
     .lg\:text-lg {
-        fontSize: 1.125rem
+        font-size: 1.125rem
     }
 
     .lg\:text-xl {
-        fontSize: 1.25rem
+        font-size: 1.25rem
     }
 
     .lg\:text-2xl {
-        fontSize: 1.5rem
+        font-size: 1.5rem
     }
 
     .lg\:text-3\.5xl {
-        fontSize: 2.25rem
+        font-size: 2.25rem
     }
 
     .lg\:text-4xl {
-        fontSize: 2.5rem
+        font-size: 2.5rem
     }
 
     .lg\:w-12 {
@@ -3075,13 +3075,13 @@ body.admin select:not(.inline) {
 }
 
 .cta-button:disabled {
-    marginTop: 2px;
-    marginBottom: -2px;
+    margin-top: 2px;
+    margin-bottom: -2px;
     box-shadow: none
 }
 
 .my-8 {
-    marginTop: 2rem;
+    margin-top: 2rem;
     padding-bottom: 2rem
 }
 
@@ -3119,8 +3119,8 @@ body.admin select:not(.inline) {
     }
 
     .lg\:my-16 {
-        marginTop: 4rem;
-        marginBottom: 4rem
+        margin-top: 4rem;
+        margin-bottom: 4rem
     }
 
     .lg\:text-right {
@@ -3205,7 +3205,7 @@ body.admin select:not(.inline) {
 }
 
 #landing-page-pro .balloon-mountains {
-    marginTop: -30px
+    margin-top: -30px
 }
 
 #landing-page-pro .balloon-mountains-reflection {
@@ -3246,7 +3246,7 @@ body.admin select:not(.inline) {
 #subscriptions-edit .stripe_form .error,
 #subscriptions-success .stripe_form .error {
     padding: 5px 10px;
-    marginBottom: 10px;
+    margin-bottom: 10px;
     display: none;
     background: #f2dede;
     color: #b94a48
@@ -3285,8 +3285,8 @@ body.admin select:not(.inline) {
 #subscriptions-edit .stripe_form input,
 #subscriptions-success .stripe_form input {
     border: 1px solid #ccc;
-    fontSize: 1rem;
-    marginBottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
     padding: 0.125rem 0.25rem
 }
 
@@ -3294,7 +3294,7 @@ body.admin select:not(.inline) {
 #subscriptions-edit .stripe_form select,
 #subscriptions-success .stripe_form select {
     display: inline-block;
-    fontSize: 1rem;
+    font-size: 1rem;
     border: 1px solid #ccc
 }
 
@@ -3319,7 +3319,7 @@ body.admin select:not(.inline) {
 #subscriptions-new .stripe_form_fancy .security a,
 #subscriptions-edit .stripe_form_fancy .security a,
 #subscriptions-success .stripe_form_fancy .security a {
-    fontWeight: bold;
+    font-weight: bold;
     color: #8656cd
 }
 
@@ -3353,7 +3353,7 @@ body.admin select:not(.inline) {
     display: inline-block;
     height: 24px;
     vertical-align: -6px;
-    lineHeight: 24px;
+    line-height: 24px;
     white-space: nowrap;
     background: #E54200;
     color: #fff
@@ -3377,7 +3377,7 @@ body.admin select:not(.inline) {
 #subscriptions-success .stripe_form_fancy .save_percent .save_percent_percent {
     display: inline-block;
     vertical-align: 7px;
-    lineHeight: 18px;
+    line-height: 18px;
     padding: 0 6px 0 2px
 }
 
@@ -3385,7 +3385,7 @@ body.admin select:not(.inline) {
 #subscriptions-edit .stripe_form_fancy .card-field,
 #subscriptions-success .stripe_form_fancy .card-field {
     border-bottom: 1px solid #9153D2;
-    marginBottom: 1px;
+    margin-bottom: 1px;
     opacity: 0.5;
     padding: 6px 8px
 }
@@ -3394,7 +3394,7 @@ body.admin select:not(.inline) {
 #subscriptions-edit .stripe_form_fancy .card-field.StripeElement--focus,
 #subscriptions-success .stripe_form_fancy .card-field.StripeElement--focus {
     border-bottom: 2px solid #9153D2;
-    marginBottom: 0;
+    margin-bottom: 0;
     outline: none;
     opacity: 1.0
 }
@@ -3406,7 +3406,7 @@ body.admin select:not(.inline) {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    fontSize: inherit;
+    font-size: inherit;
     font-family: inherit;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 7px 8px;
@@ -3429,13 +3429,13 @@ body.admin select:not(.inline) {
 #subscriptions-new .stripe_form_fancy select option,
 #subscriptions-edit .stripe_form_fancy select option,
 #subscriptions-success .stripe_form_fancy select option {
-    fontWeight: normal
+    font-weight: normal
 }
 
 #subscriptions-new .balloon-mountains,
 #subscriptions-edit .balloon-mountains,
 #subscriptions-success .balloon-mountains {
-    marginTop: -20px
+    margin-top: -20px
 }
 
 #subscriptions-new .balloon-mountains-reflection,
@@ -3495,7 +3495,7 @@ body.admin select:not(.inline) {
 
 body.admin h3 {
     color: #137863;
-    marginTop: 1.5em
+    margin-top: 1.5em
 }
 
 body.admin .simple-link,

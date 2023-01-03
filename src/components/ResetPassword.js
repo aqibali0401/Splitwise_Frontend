@@ -50,15 +50,15 @@ const ResetPassword = (props) => {
                         <input type="hidden" name="_method" value="patch" autoComplete="off" />
                         <input type="hidden" name="authenticity_token" value="OnPJ0-jAxg0q2CbeUxPfaKtEpD_58U2IGQXp-b-BsV5SvBEjxWL7skL8GWrbGe_jFjYoOL5h4f8kfNv2RAXf7g" autoComplete="off" />
                         <div class="clearfix">
-                            <label for="password">Your new password</label>
+                            <label htmlFor="password">Your new password</label>
                             <div class="input">
                                 <input className='restetPassInput' type="password" name="password" id="password" onChange={onChange} />
                             </div>
-                            <label for="password2">Confirm Password </label>
+                            <label htmlFor="password2">Confirm Password </label>
                             <div class="input">
                                 <input className='restetPassInput' type="password" name="password2" id="password2" onChange={onChange} />
                             </div>
-                            <label for="password">Password</label>
+                            <label htmlFor="password">Password</label>
                         </div>
 
                         <button type="submit" class="btn btn-large btn-orange" style={{ 'fontSize': '22px' }} >Save</button>

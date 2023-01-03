@@ -53,10 +53,10 @@ const ForgotPassword = (props) => {
               <div className="tab-content">
                 <div className="tab-pane active" id="email">
                   <div className="clearfix">
-                    <label for="email" className='emailHeading' >Your email address</label>
+                    <label htmlFor="email" className='emailHeading' >Your email address</label>
 
                     <div className="input emailInput">
-                      <input type="email" id="email" autocapitalize="off" name='email' onChange={onChange} />
+                      <input type="email" id="email" autoCapitalize="off" name='email' onChange={onChange} />
                     </div>
                   </div>
                 </div>

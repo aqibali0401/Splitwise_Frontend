@@ -11,7 +11,7 @@ audio:not([controls]) {
 }
 
 html {
-    fontSize: 100%;
+    font-size: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%
 }
@@ -30,8 +30,8 @@ a:active {
 sub,
 sup {
     position: relative;
-    fontSize: 75%;
-    lineHeight: 0;
+    font-size: 75%;
+    line-height: 0;
     vertical-align: baseline
 }
 
@@ -59,14 +59,14 @@ input,
 select,
 textarea {
     margin: 0;
-    fontSize: 100%;
+    font-size: 100%;
     vertical-align: middle
 }
 
 button,
 input {
     *overflow: visible;
-    lineHeight: normal
+    line-height: normal
 }
 
 button::-moz-focus-inner,
@@ -390,15 +390,15 @@ p {
 }
 
 p small {
-    fontSize: 11px;
+    font-size: 11px;
     color: #999999
 }
 
 .lead {
-    marginBottom: 18px;
-    fontSize: 20px;
-    fontWeight: 200;
-    lineHeight: 27px
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 27px
 }
 
 h1,
@@ -409,7 +409,7 @@ h5,
 h6 {
     margin: 0;
     font-family: inherit;
-    fontWeight: bold;
+    font-weight: bold;
     color: inherit;
     text-rendering: optimizelegibility
 }
@@ -420,57 +420,57 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
-    fontWeight: normal;
+    font-weight: normal;
     color: #999999
 }
 
 h1 {
-    fontSize: 30px;
-    lineHeight: 36px
+    font-size: 30px;
+    line-height: 36px
 }
 
 h1 small {
-    fontSize: 18px
+    font-size: 18px
 }
 
 h2 {
-    fontSize: 24px;
-    lineHeight: 36px
+    font-size: 24px;
+    line-height: 36px
 }
 
 h2 small {
-    fontSize: 18px
+    font-size: 18px
 }
 
 h3 {
-    fontSize: 18px;
-    lineHeight: 27px
+    font-size: 18px;
+    line-height: 27px
 }
 
 h3 small {
-    fontSize: 14px
+    font-size: 14px
 }
 
 h4,
 h5,
 h6 {
-    lineHeight: 18px
+    line-height: 18px
 }
 
 h4 {
-    fontSize: 14px
+    font-size: 14px
 }
 
 h4 small {
-    fontSize: 12px
+    font-size: 12px
 }
 
 h5 {
-    fontSize: 12px
+    font-size: 12px
 }
 
 h6 {
-    fontSize: 11px;
+    font-size: 11px;
     color: #999999;
     text-Transform: uppercase
 }
@@ -482,7 +482,7 @@ h6 {
 }
 
 .page-header h1 {
-    lineHeight: 1
+    line-height: 1
 }
 
 ul,
@@ -495,7 +495,7 @@ ul ul,
 ul ol,
 ol ol,
 ol ul {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 ul {
@@ -507,7 +507,7 @@ ol {
 }
 
 li {
-    lineHeight: 18px
+    line-height: 18px
 }
 
 ul.unstyled,
@@ -517,17 +517,17 @@ ol.unstyled {
 }
 
 dl {
-    marginBottom: 18px
+    margin-bottom: 18px
 }
 
 dt,
 dd {
-    lineHeight: 18px
+    line-height: 18px
 }
 
 dt {
-    fontWeight: bold;
-    lineHeight: 17px
+    font-weight: bold;
+    line-height: 17px
 }
 
 dd {
@@ -556,7 +556,7 @@ hr {
 }
 
 strong {
-    fontWeight: bold
+    font-weight: bold
 }
 
 em {
@@ -573,7 +573,7 @@ abbr[title] {
 }
 
 abbr.initialism {
-    fontSize: 90%;
+    font-size: 90%;
     text-Transform: uppercase
 }
 
@@ -584,15 +584,15 @@ blockquote {
 }
 
 blockquote p {
-    marginBottom: 0;
-    fontSize: 16px;
-    fontWeight: 300;
-    lineHeight: 22.5px
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.5px
 }
 
 blockquote small {
     display: block;
-    lineHeight: 18px;
+    line-height: 18px;
     color: #999999
 }
 
@@ -622,13 +622,13 @@ blockquote:after {
 
 address {
     display: block;
-    marginBottom: 18px;
+    margin-bottom: 18px;
     font-style: normal;
-    lineHeight: 18px
+    line-height: 18px
 }
 
 small {
-    fontSize: 100%
+    font-size: 100%
 }
 
 cite {
@@ -639,7 +639,7 @@ code,
 pre {
     padding: 0 3px 2px;
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    fontSize: 12px;
+    font-size: 12px;
     color: #333333;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -657,8 +657,8 @@ pre {
     display: block;
     padding: 8.5px;
     margin: 0 0 9px;
-    fontSize: 12.025px;
-    lineHeight: 18px;
+    font-size: 12.025px;
+    line-height: 18px;
     word-break: break-all;
     word-wrap: break-word;
     white-space: pre;
@@ -672,7 +672,7 @@ pre {
 }
 
 pre.prettyprint {
-    marginBottom: 18px
+    margin-bottom: 18px
 }
 
 pre code {
@@ -701,16 +701,16 @@ legend {
     display: block;
     width: 100%;
     padding: 0;
-    marginBottom: 27px;
-    fontSize: 19.5px;
-    lineHeight: 36px;
+    margin-bottom: 27px;
+    font-size: 19.5px;
+    line-height: 36px;
     color: #333333;
     border: 0;
     border-bottom: 1px solid #e5e5e5
 }
 
 legend small {
-    fontSize: 13.5px;
+    font-size: 13.5px;
     color: #999999
 }
 
@@ -719,9 +719,9 @@ input,
 button,
 select,
 textarea {
-    fontSize: 13px;
-    fontWeight: normal;
-    lineHeight: 18px
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px
 }
 
 input,
@@ -733,7 +733,7 @@ textarea {
 
 label {
     display: block;
-    marginBottom: 5px
+    margin-bottom: 5px
 }
 
 select,
@@ -757,9 +757,9 @@ input[type="color"],
     display: inline-block;
     height: 18px;
     padding: 4px;
-    marginBottom: 9px;
-    fontSize: 13px;
-    lineHeight: 18px;
+    margin-bottom: 9px;
+    font-size: 13px;
+    line-height: 18px;
     color: #555555
 }
 
@@ -830,8 +830,8 @@ input[type="color"]:focus,
 input[type="radio"],
 input[type="checkbox"] {
     margin: 3px 0;
-    *marginTop: 0;
-    lineHeight: normal;
+    *margin-top: 0;
+    line-height: normal;
     cursor: pointer
 }
 
@@ -851,8 +851,8 @@ input[type="checkbox"] {
 select,
 input[type="file"] {
     height: 28px;
-    *marginTop: 4px;
-    lineHeight: 28px
+    *margin-top: 4px;
+    line-height: 28px
 }
 
 select {
@@ -895,7 +895,7 @@ input[type="checkbox"]:focus {
 .checkbox.inline {
     display: inline-block;
     padding-top: 5px;
-    marginBottom: 0;
+    margin-bottom: 0;
     vertical-align: middle
 }
 
@@ -1162,8 +1162,8 @@ select:focus:required:invalid:focus {
 
 .form-actions {
     padding: 17px 20px 18px;
-    marginTop: 18px;
-    marginBottom: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     background-color: #f5f5f5;
     border-top: 1px solid #e5e5e5;
     *zoom: 1
@@ -1209,7 +1209,7 @@ select:focus:required:invalid:focus {
 
 .help-block {
     display: block;
-    marginBottom: 9px
+    margin-bottom: 9px
 }
 
 .help-inline {
@@ -1222,7 +1222,7 @@ select:focus:required:invalid:focus {
 
 .input-prepend,
 .input-append {
-    marginBottom: 5px
+    margin-bottom: 5px
 }
 
 .input-prepend input,
@@ -1232,7 +1232,7 @@ select:focus:required:invalid:focus {
 .input-prepend .uneditable-input,
 .input-append .uneditable-input {
     position: relative;
-    marginBottom: 0;
+    margin-bottom: 0;
     *margin-left: 0;
     vertical-align: middle;
     -webkit-border-radius: 0 3px 3px 0;
@@ -1261,8 +1261,8 @@ select:focus:required:invalid:focus {
     height: 18px;
     min-width: 16px;
     padding: 4px 5px;
-    fontWeight: normal;
-    lineHeight: 18px;
+    font-weight: normal;
+    line-height: 18px;
     text-align: center;
     text-shadow: 0 1px 0 #ffffff;
     vertical-align: middle;
@@ -1347,7 +1347,7 @@ select:focus:required:invalid:focus {
     padding-right: 4px \9;
     padding-left: 14px;
     padding-left: 4px \9;
-    marginBottom: 0;
+    margin-bottom: 0;
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
     border-radius: 14px
@@ -1377,7 +1377,7 @@ select:focus:required:invalid:focus {
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .form-search .hide,
@@ -1395,7 +1395,7 @@ select:focus:required:invalid:focus {
 .form-inline .input-append,
 .form-search .input-prepend,
 .form-inline .input-prepend {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .form-search .radio,
@@ -1403,7 +1403,7 @@ select:focus:required:invalid:focus {
 .form-inline .radio,
 .form-inline .checkbox {
     padding-left: 0;
-    marginBottom: 0;
+    margin-bottom: 0;
     vertical-align: middle
 }
 
@@ -1417,16 +1417,16 @@ select:focus:required:invalid:focus {
 }
 
 .control-group {
-    marginBottom: 9px
+    margin-bottom: 9px
 }
 
 legend+.control-group {
-    marginTop: 18px;
-    -webkit-marginTop-collapse: separate
+    margin-top: 18px;
+    -webkit-margin-top-collapse: separate
 }
 
 .form-horizontal .control-group {
-    marginBottom: 18px;
+    margin-bottom: 18px;
     *zoom: 1
 }
 
@@ -1459,8 +1459,8 @@ legend+.control-group {
 }
 
 .form-horizontal .help-block {
-    marginTop: 9px;
-    marginBottom: 0
+    margin-top: 9px;
+    margin-bottom: 0
 }
 
 .form-horizontal .form-actions {
@@ -1476,20 +1476,20 @@ table {
 
 .table {
     width: 100%;
-    marginBottom: 18px
+    margin-bottom: 18px
 }
 
 .table th,
 .table td {
     padding: 8px;
-    lineHeight: 18px;
+    line-height: 18px;
     text-align: left;
     vertical-align: top;
     border-top: 1px solid #dddddd
 }
 
 .table th {
-    fontWeight: bold
+    font-weight: bold
 }
 
 .table thead th {
@@ -1732,7 +1732,7 @@ table .span24 {
     width: 14px;
     height: 14px;
     *margin-right: .3em;
-    lineHeight: 14px;
+    line-height: 14px;
     vertical-align: text-top;
     /* background-image: url("bootstrap-2.0.4/twitter/bootstrap/glyphicons-halflings.png"); */
     background-position: 14px 14px;
@@ -2314,7 +2314,7 @@ table .span24 {
 }
 
 .dropdown-toggle {
-    *marginBottom: -3px
+    *margin-bottom: -3px
 }
 
 .dropdown-toggle:active,
@@ -2336,7 +2336,7 @@ table .span24 {
 }
 
 .dropdown .caret {
-    marginTop: 8px;
+    margin-top: 8px;
     margin-left: 2px
 }
 
@@ -2392,8 +2392,8 @@ table .span24 {
     display: block;
     padding: 3px 15px;
     clear: both;
-    fontWeight: normal;
-    lineHeight: 18px;
+    font-weight: normal;
+    line-height: 18px;
     color: #333333;
     white-space: nowrap
 }
@@ -2430,11 +2430,11 @@ table .span24 {
 .navbar-fixed-bottom .dropdown .dropdown-menu {
     top: auto;
     bottom: 100%;
-    marginBottom: 1px
+    margin-bottom: 1px
 }
 
 .typeahead {
-    marginTop: 2px;
+    margin-top: 2px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px
@@ -2443,7 +2443,7 @@ table .span24 {
 .well {
     min-height: 20px;
     padding: 19px;
-    marginBottom: 20px;
+    margin-bottom: 20px;
     background-color: #f5f5f5;
     border: 1px solid #eee;
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -2504,9 +2504,9 @@ table .span24 {
 
 .close {
     float: right;
-    fontSize: 20px;
-    fontWeight: bold;
-    lineHeight: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 18px;
     color: #000000;
     text-shadow: 0 1px 0 #ffffff;
     opacity: 0.2;
@@ -2534,10 +2534,10 @@ button.close {
     *display: inline;
     *zoom: 1;
     padding: 4px 10px 4px;
-    marginBottom: 0;
-    fontSize: 13px;
-    lineHeight: 18px;
-    *lineHeight: 20px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 18px;
+    *line-height: 20px;
     color: #333333;
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
@@ -2630,31 +2630,31 @@ button.close {
 
 .btn-large {
     padding: 9px 14px;
-    fontSize: 15px;
-    lineHeight: normal;
+    font-size: 15px;
+    line-height: normal;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px
 }
 
 .btn-large [class^="icon-"] {
-    marginTop: 1px
+    margin-top: 1px
 }
 
 .btn-small {
     padding: 5px 9px;
-    fontSize: 11px;
-    lineHeight: 16px
+    font-size: 11px;
+    line-height: 16px
 }
 
 .btn-small [class^="icon-"] {
-    marginTop: -1px
+    margin-top: -1px
 }
 
 .btn-mini {
     padding: 2px 6px;
-    fontSize: 11px;
-    lineHeight: 14px
+    font-size: 11px;
+    line-height: 14px
 }
 
 .btn-primary,
@@ -2922,8 +2922,8 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .btn-toolbar {
-    marginTop: 9px;
-    marginBottom: 9px
+    margin-top: 9px;
+    margin-bottom: 9px
 }
 
 .btn-toolbar .btn-group {
@@ -3054,7 +3054,7 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .btn .caret {
-    marginTop: 7px;
+    margin-top: 7px;
     margin-left: 0
 }
 
@@ -3065,15 +3065,15 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .btn-mini .caret {
-    marginTop: 5px
+    margin-top: 5px
 }
 
 .btn-small .caret {
-    marginTop: 6px
+    margin-top: 6px
 }
 
 .btn-large .caret {
-    marginTop: 6px;
+    margin-top: 6px;
     border-left-width: 5px;
     border-right-width: 5px;
     border-top-width: 5px
@@ -3098,7 +3098,7 @@ input.btn.btn-mini[type="submit"] {
 
 .alert {
     padding: 8px 35px 8px 14px;
-    marginBottom: 18px;
+    margin-bottom: 18px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     background-color: #fcf8e3;
     border: 1px solid #fbeed5;
@@ -3116,7 +3116,7 @@ input.btn.btn-mini[type="submit"] {
     position: relative;
     top: -2px;
     right: -21px;
-    lineHeight: 18px
+    line-height: 18px
 }
 
 .alert-success {
@@ -3145,16 +3145,16 @@ input.btn.btn-mini[type="submit"] {
 
 .alert-block>p,
 .alert-block>ul {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .alert-block p+p {
-    marginTop: 5px
+    margin-top: 5px
 }
 
 .nav {
     margin-left: 0;
-    marginBottom: 18px;
+    margin-bottom: 18px;
     list-style: none
 }
 
@@ -3174,22 +3174,22 @@ input.btn.btn-mini[type="submit"] {
 .nav .nav-header {
     display: block;
     padding: 3px 15px;
-    fontSize: 11px;
-    fontWeight: bold;
-    lineHeight: 18px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
     color: #999999;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     text-Transform: uppercase
 }
 
 .nav li+.nav-header {
-    marginTop: 9px
+    margin-top: 9px
 }
 
 .nav-list {
     padding-left: 15px;
     padding-right: 15px;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .nav-list>li>a,
@@ -3252,7 +3252,7 @@ input.btn.btn-mini[type="submit"] {
     padding-right: 12px;
     padding-left: 12px;
     margin-right: 2px;
-    lineHeight: 14px
+    line-height: 14px
 }
 
 .nav-tabs {
@@ -3260,13 +3260,13 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .nav-tabs>li {
-    marginBottom: -1px
+    margin-bottom: -1px
 }
 
 .nav-tabs>li>a {
     padding-top: 8px;
     padding-bottom: 8px;
-    lineHeight: 18px;
+    line-height: 18px;
     border: 1px solid transparent;
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
@@ -3289,8 +3289,8 @@ input.btn.btn-mini[type="submit"] {
 .nav-pills>li>a {
     padding-top: 8px;
     padding-bottom: 8px;
-    marginTop: 2px;
-    marginBottom: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px
@@ -3339,11 +3339,11 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .nav-pills.nav-stacked>li>a {
-    marginBottom: 3px
+    margin-bottom: 3px
 }
 
 .nav-pills.nav-stacked>li:last-child>a {
-    marginBottom: 1px
+    margin-bottom: 1px
 }
 
 .nav-tabs .dropdown-menu {
@@ -3362,7 +3362,7 @@ input.btn.btn-mini[type="submit"] {
 .nav-pills .dropdown-toggle .caret {
     border-top-color: #0088cc;
     border-bottom-color: #0088cc;
-    marginTop: 6px
+    margin-top: 6px
 }
 
 .nav-tabs .dropdown-toggle:hover .caret,
@@ -3442,8 +3442,8 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .tabs-below>.nav-tabs>li {
-    marginTop: -1px;
-    marginBottom: 0
+    margin-top: -1px;
+    margin-bottom: 0
 }
 
 .tabs-below>.nav-tabs>li>a {
@@ -3471,7 +3471,7 @@ input.btn.btn-mini[type="submit"] {
 .tabs-right>.nav-tabs>li>a {
     min-width: 74px;
     margin-right: 0;
-    marginBottom: 3px
+    margin-bottom: 3px
 }
 
 .tabs-left>.nav-tabs {
@@ -3524,7 +3524,7 @@ input.btn.btn-mini[type="submit"] {
     *position: relative;
     *z-index: 2;
     overflow: visible;
-    marginBottom: 18px
+    margin-bottom: 18px
 }
 
 .navbar-inner {
@@ -3569,15 +3569,15 @@ input.btn.btn-mini[type="submit"] {
     display: block;
     padding: 4.5px 20px 8.5px;
     margin-left: -20px;
-    fontSize: 20px;
-    fontWeight: 200;
-    lineHeight: 1;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1;
     color: #ffffff
 }
 
 .navbar .navbar-text {
-    marginBottom: 0;
-    lineHeight: 33px
+    margin-bottom: 0;
+    line-height: 33px
 }
 
 .navbar .navbar-link {
@@ -3590,7 +3590,7 @@ input.btn.btn-mini[type="submit"] {
 
 .navbar .btn,
 .navbar .btn-group {
-    marginTop: 1.5px
+    margin-top: 1.5px
 }
 
 .navbar .btn-group .btn {
@@ -3598,7 +3598,7 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .navbar-form {
-    marginBottom: 0;
+    margin-bottom: 0;
     *zoom: 1
 }
 
@@ -3616,45 +3616,45 @@ input.btn.btn-mini[type="submit"] {
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-    marginTop: 1.5px
+    margin-top: 1.5px
 }
 
 .navbar-form input,
 .navbar-form select {
     display: inline-block;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .navbar-form input[type="image"],
 .navbar-form input[type="checkbox"],
 .navbar-form input[type="radio"] {
-    marginTop: 3px
+    margin-top: 3px
 }
 
 .navbar-form .input-append,
 .navbar-form .input-prepend {
-    marginTop: 6px;
+    margin-top: 6px;
     white-space: nowrap
 }
 
 .navbar-form .input-append input,
 .navbar-form .input-prepend input {
-    marginTop: 0
+    margin-top: 0
 }
 
 .navbar-search {
     position: relative;
     float: left;
-    marginTop: 2.5px;
-    marginBottom: 0
+    margin-top: 2.5px;
+    margin-bottom: 0
 }
 
 .navbar-search .search-query {
     padding: 4px 9px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    fontSize: 13px;
-    fontWeight: normal;
-    lineHeight: 1;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
     color: #ffffff;
     background-color: #b9e6da;
     border: 1px solid #48be9d;
@@ -3699,7 +3699,7 @@ input.btn.btn-mini[type="submit"] {
     right: 0;
     left: 0;
     z-index: 1030;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .navbar-fixed-top .navbar-inner,
@@ -3744,7 +3744,7 @@ input.btn.btn-mini[type="submit"] {
 .navbar .nav>li>a {
     float: none;
     padding: 5.5px 10px 7.5px;
-    lineHeight: 19px;
+    line-height: 19px;
     color: #ffffff;
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
@@ -3754,7 +3754,7 @@ input.btn.btn-mini[type="submit"] {
     display: inline-block;
     padding: 4px 10px 4px;
     margin: 1.5px 5px 2.5px;
-    lineHeight: 18px
+    line-height: 18px
 }
 
 .navbar .btn-group {
@@ -3841,7 +3841,7 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .btn-navbar .icon-bar+.icon-bar {
-    marginTop: 3px
+    margin-top: 3px
 }
 
 .navbar .dropdown-menu:before {
@@ -3969,7 +3969,7 @@ input.btn.btn-mini[type="submit"] {
     *display: inline;
     *zoom: 1;
     margin-left: 0;
-    marginBottom: 0;
+    margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -3985,7 +3985,7 @@ input.btn.btn-mini[type="submit"] {
 .pagination a {
     float: left;
     padding: 0 14px;
-    lineHeight: 34px;
+    line-height: 34px;
     text-decoration: none;
     border: 1px solid #ddd;
     border-left-width: 0
@@ -4032,7 +4032,7 @@ input.btn.btn-mini[type="submit"] {
 
 .pager {
     margin-left: 0;
-    marginBottom: 18px;
+    margin-bottom: 18px;
     list-style: none;
     text-align: center;
     *zoom: 1
@@ -4160,7 +4160,7 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .modal-header .close {
-    marginTop: 2px
+    margin-top: 2px
 }
 
 .modal-body {
@@ -4170,12 +4170,12 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .modal-form {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .modal-footer {
     padding: 14px 15px 15px;
-    marginBottom: 0;
+    margin-bottom: 0;
     text-align: right;
     background-color: #f5f5f5;
     border-top: 1px solid #ddd;
@@ -4200,7 +4200,7 @@ input.btn.btn-mini[type="submit"] {
 
 .modal-footer .btn+.btn {
     margin-left: 5px;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .modal-footer .btn-group .btn+.btn {
@@ -4213,7 +4213,7 @@ input.btn.btn-mini[type="submit"] {
     display: block;
     visibility: visible;
     padding: 5px;
-    fontSize: 11px;
+    font-size: 11px;
     opacity: 0;
     filter: alpha(opacity=0)
 }
@@ -4224,7 +4224,7 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .tooltip.top {
-    marginTop: -2px
+    margin-top: -2px
 }
 
 .tooltip.right {
@@ -4232,7 +4232,7 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .tooltip.bottom {
-    marginTop: 2px
+    margin-top: 2px
 }
 
 .tooltip.left {
@@ -4251,7 +4251,7 @@ input.btn.btn-mini[type="submit"] {
 .tooltip.left .tooltip-arrow {
     top: 50%;
     right: 0;
-    marginTop: -5px;
+    margin-top: -5px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 5px solid #000000
@@ -4269,7 +4269,7 @@ input.btn.btn-mini[type="submit"] {
 .tooltip.right .tooltip-arrow {
     top: 50%;
     left: 0;
-    marginTop: -5px;
+    margin-top: -5px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-right: 5px solid #000000
@@ -4303,7 +4303,7 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .popover.top {
-    marginTop: -5px
+    margin-top: -5px
 }
 
 .popover.right {
@@ -4311,7 +4311,7 @@ input.btn.btn-mini[type="submit"] {
 }
 
 .popover.bottom {
-    marginTop: 5px
+    margin-top: 5px
 }
 
 .popover.left {
@@ -4330,7 +4330,7 @@ input.btn.btn-mini[type="submit"] {
 .popover.right .arrow {
     top: 50%;
     left: 0;
-    marginTop: -5px;
+    margin-top: -5px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-right: 5px solid #000000
@@ -4348,7 +4348,7 @@ input.btn.btn-mini[type="submit"] {
 .popover.left .arrow {
     top: 50%;
     right: 0;
-    marginTop: -5px;
+    margin-top: -5px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 5px solid #000000
@@ -4376,7 +4376,7 @@ input.btn.btn-mini[type="submit"] {
 
 .popover-title {
     padding: 9px 15px;
-    lineHeight: 1;
+    line-height: 1;
     background-color: #f5f5f5;
     border-bottom: 1px solid #eee;
     -webkit-border-radius: 3px 3px 0 0;
@@ -4398,7 +4398,7 @@ input.btn.btn-mini[type="submit"] {
 .popover-content p,
 .popover-content ul,
 .popover-content ol {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .thumbnails {
@@ -4423,14 +4423,14 @@ input.btn.btn-mini[type="submit"] {
 
 .thumbnails>li {
     float: left;
-    marginBottom: 18px;
+    margin-bottom: 18px;
     margin-left: 20px
 }
 
 .thumbnail {
     display: block;
     padding: 4px;
-    lineHeight: 1;
+    line-height: 1;
     border: 1px solid #ddd;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -4460,9 +4460,9 @@ a.thumbnail:hover {
 
 .label,
 .badge {
-    fontSize: 10.998px;
-    fontWeight: bold;
-    lineHeight: 14px;
+    font-size: 10.998px;
+    font-weight: bold;
+    line-height: 14px;
     color: #ffffff;
     vertical-align: baseline;
     white-space: nowrap;
@@ -4594,7 +4594,7 @@ a.badge:hover {
 .progress {
     overflow: hidden;
     height: 18px;
-    marginBottom: 18px;
+    margin-bottom: 18px;
     background-color: #f7f7f7;
     background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
     background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
@@ -4616,7 +4616,7 @@ a.badge:hover {
     width: 0%;
     height: 18px;
     color: #ffffff;
-    fontSize: 12px;
+    font-size: 12px;
     text-align: center;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     background-color: #0e90d2;
@@ -4753,11 +4753,11 @@ a.badge:hover {
 }
 
 .accordion {
-    marginBottom: 18px
+    margin-bottom: 18px
 }
 
 .accordion-group {
-    marginBottom: 2px;
+    margin-bottom: 2px;
     border: 1px solid #e5e5e5;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -4784,8 +4784,8 @@ a.badge:hover {
 
 .carousel {
     position: relative;
-    marginBottom: 18px;
-    lineHeight: 1
+    margin-bottom: 18px;
+    line-height: 1
 }
 
 .carousel-inner {
@@ -4806,7 +4806,7 @@ a.badge:hover {
 
 .carousel .item>img {
     display: block;
-    lineHeight: 1
+    line-height: 1
 }
 
 .carousel .active,
@@ -4853,10 +4853,10 @@ a.badge:hover {
     left: 15px;
     width: 40px;
     height: 40px;
-    marginTop: -20px;
-    fontSize: 60px;
-    fontWeight: 100;
-    lineHeight: 30px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 30px;
     color: #ffffff;
     text-align: center;
     background: #222222;
@@ -4897,7 +4897,7 @@ a.badge:hover {
 
 .hero-unit {
     padding: 60px;
-    marginBottom: 30px;
+    margin-bottom: 30px;
     background-color: #eeeeee;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -4905,17 +4905,17 @@ a.badge:hover {
 }
 
 .hero-unit h1 {
-    marginBottom: 0;
-    fontSize: 60px;
-    lineHeight: 1;
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 1;
     color: inherit;
     letter-spacing: -1px
 }
 
 .hero-unit p {
-    fontSize: 18px;
-    fontWeight: 200;
-    lineHeight: 27px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 27px;
     color: inherit
 }
 
@@ -4946,7 +4946,7 @@ a.badge:hover {
 /* css form second line  */
 
 
-.datepicker{top:0;left:0;padding:4px;marginTop:1px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;z-index:999999}.datepicker:before{content:'';display:inline-block;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,0.2);position:absolute;top:-7px;left:6px}.datepicker:after{content:'';display:inline-block;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #ffffff;position:absolute;top:-6px;left:7px}.datepicker>div{display:none}.datepicker.days div.datepicker-days{display:block}.datepicker.months div.datepicker-months{display:block}.datepicker.years div.datepicker-years{display:block}.datepicker table{width:100%;margin:0}.datepicker td,.datepicker th{text-align:center;width:20px;height:20px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.datepicker td.day:hover{background:#eeeeee;cursor:pointer}.datepicker td.old,.datepicker td.new{color:#999999}.datepicker td.active,.datepicker td.active:hover{background-color:#006dcc;background-image:-moz-linear-gradient(top, #08c, #04c);background-image:-ms-linear-gradient(top, #08c, #04c);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#08c), to(#04c));background-image:-webkit-linear-gradient(top, #08c, #04c);background-image:-o-linear-gradient(top, #08c, #04c);background-image:linear-gradient(top, #08c, #04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);border-color:#0044cc #0044cc #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#0044cc;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.datepicker td.active:hover,.datepicker td.active:hover:hover,.datepicker td.active:active,.datepicker td.active:hover:active,.datepicker td.active.active,.datepicker td.active.active:hover,.datepicker td.active.disabled,.datepicker td.active.disabled:hover,.datepicker td.active[disabled],.datepicker td.active[disabled]:hover{background-color:#0044cc;*background-color:#003bb3}.datepicker td.active:active,.datepicker td.active:hover:active,.datepicker td.active.active,.datepicker td.active.active:hover{background-color:#003399 \9}.datepicker td span{display:block;width:47px;height:54px;lineHeight:54px;float:left;margin:2px;cursor:pointer;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.datepicker td span:hover{background:#eeeeee}.datepicker td span.active{background-color:#006dcc;background-image:-moz-linear-gradient(top, #08c, #04c);background-image:-ms-linear-gradient(top, #08c, #04c);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#08c), to(#04c));background-image:-webkit-linear-gradient(top, #08c, #04c);background-image:-o-linear-gradient(top, #08c, #04c);background-image:linear-gradient(top, #08c, #04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);border-color:#0044cc #0044cc #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#0044cc;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.datepicker td span.active:hover,.datepicker td span.active:active,.datepicker td span.active.active,.datepicker td span.active.disabled,.datepicker td span.active[disabled]{background-color:#0044cc;*background-color:#003bb3}.datepicker td span.active:active,.datepicker td span.active.active{background-color:#003399 \9}.datepicker td span.old{color:#999999}.datepicker th.switch{width:145px}.datepicker thead tr:first-child th{cursor:pointer}.datepicker thead tr:first-child th:hover{background:#eeeeee}.input-append.date .add-on i,.input-prepend.date .add-on i{display:block;cursor:pointer;width:16px;height:16px}fieldset.token-input-mac{position:relative;padding:0;margin:5px 0;background:#fef;width:400px;border:1px solid #A4BDEC;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px}fieldset.token-input-mac.token-input-dropdown-mac{border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;-webkit-border-radius:10px 10px 0 0;box-shadow:0 5px 20px 0 rgba(0,0,0,0.25);-moz-box-shadow:0 5px 20px 0 rgba(0,0,0,0.25);-webkit-box-shadow:0 5px 20px 0 rgba(0,0,0,0.25)}ul.token-input-list-mac{overflow:hidden;height:auto !important;height:1%;cursor:text;fontSize:12px;min-height:1px;z-index:999999;margin:0;padding:3px;background:transparent}ul.token-input-list-mac.error{border:1px solid #C52020}ul.token-input-list-mac li{list-style-type:none;white-space:nowrap;overflow:visible;padding-right:6px}li.token-input-token-mac p{display:inline;padding:0;margin:0}li.token-input-token-mac img{height:18px;width:18px;margin-right:4px;margin-left:-9px;marginTop:-1px;border:1px solid #999;display:inline-block;float:left;background:#fff;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}li.token-input-token-mac span{color:#aaa;margin-left:5px;fontWeight:bold;cursor:pointer}li.token-input-token-mac{fontSize:14px;lineHeight:18px;overflow:hidden;height:18px;margin:3px;padding:0 8px;background:none;background-color:#f6f6f6;color:#000;cursor:default;border:1px solid #bbb;border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;float:left}li.token-input-highlighted-token-mac{background-color:#eee;border:1px solid #aaa;color:#000}li.token-input-selected-token-mac{background-color:#555;border:1px solid transparent;color:#fff}li.token-input-token-mac span.token-input-delete-token-mac{padding-right:3px}li.token-input-highlighted-token-mac span.token-input-delete-token-mac{color:#000}li.token-input-selected-token-mac span.token-input-delete-token-mac{color:#fff}li.token-input-input-token-mac{border:none;background:transparent;float:left;padding:0;margin:0}li.token-input-input-token-mac input{border:0;min-width:10px;fontSize:14px;width:100px;padding:5px 3px 3px;background-color:transparent;margin:0;outline:none !important;box-shadow:none !important;-webkit-box-shadow:none !important;border:none !important}div.token-input-dropdown-mac{position:fixed;border:none;left:-1px;right:-1px;background:#fff;background:rgba(255,255,255,0.93);border:1px solid #999;border-top-color:#bbb;border-bottom-color:#bbb;overflow:hidden;cursor:default;fontSize:10pt;padding:0px;clip:rect(0px, 1000px, 1000px, -10px);z-index:9991}div.token-input-dropdown-mac p{fontSize:13px;margin:0;padding:5px 10px;color:#999}div.token-input-dropdown-mac h3.token-input-dropdown-category-mac{fontSize:10pt;fontWeight:bold;border:none;padding:0 5px;margin:0}div.token-input-dropdown-mac ul{margin:0;padding:0}div.token-input-dropdown-mac ul li{list-style-type:none;cursor:pointer;background:#fff;margin:0;padding:0 0 0 0}div.token-input-dropdown-mac ul li p{color:#000}div.token-input-dropdown-mac ul li img{width:26px;height:26px;border:1px solid #ccc;margin-right:5px;-webkit-border-radius:14px;-moz-border-radius:14px;border-radius:14px}div.token-input-dropdown-mac ul li.token-input-dropdown-item-mac span.token-input-dropdown-item-description-mac{float:right;fontSize:14pt;padding:0 10px 0 0;color:#000}div.token-input-dropdown-mac ul li strong{fontWeight:bold;text-decoration:underline;font-style:none}div.token-input-dropdown-mac ul li.token-input-selected-dropdown-item-mac,div.token-input-dropdown-mac ul li.token-input-selected-dropdown-item-mac.odd{background-color:#eee;color:#000}div.token-input-dropdown-mac ul li.token-input-selected-dropdown-item-mac span.token-input-dropdown-item-description-mac,div.token-input-dropdown-mac ul li.token-input-selected-dropdown-item-mac.odd span.token-input-dropdown-item-description-mac{color:#fff}.switchery{background-color:#fff;border:1px solid #dfdfdf;border-radius:20px;cursor:pointer;display:inline-block;height:30px;position:relative;vertical-align:middle;width:50px}.switchery>small{background:#fff;border-radius:100%;box-shadow:0 1px 3px rgba(0,0,0,0.4);height:30px;position:absolute;top:0;width:30px}
+.datepicker{top:0;left:0;padding:4px;margin-top:1px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;z-index:999999}.datepicker:before{content:'';display:inline-block;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,0.2);position:absolute;top:-7px;left:6px}.datepicker:after{content:'';display:inline-block;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #ffffff;position:absolute;top:-6px;left:7px}.datepicker>div{display:none}.datepicker.days div.datepicker-days{display:block}.datepicker.months div.datepicker-months{display:block}.datepicker.years div.datepicker-years{display:block}.datepicker table{width:100%;margin:0}.datepicker td,.datepicker th{text-align:center;width:20px;height:20px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.datepicker td.day:hover{background:#eeeeee;cursor:pointer}.datepicker td.old,.datepicker td.new{color:#999999}.datepicker td.active,.datepicker td.active:hover{background-color:#006dcc;background-image:-moz-linear-gradient(top, #08c, #04c);background-image:-ms-linear-gradient(top, #08c, #04c);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#08c), to(#04c));background-image:-webkit-linear-gradient(top, #08c, #04c);background-image:-o-linear-gradient(top, #08c, #04c);background-image:linear-gradient(top, #08c, #04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);border-color:#0044cc #0044cc #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#0044cc;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.datepicker td.active:hover,.datepicker td.active:hover:hover,.datepicker td.active:active,.datepicker td.active:hover:active,.datepicker td.active.active,.datepicker td.active.active:hover,.datepicker td.active.disabled,.datepicker td.active.disabled:hover,.datepicker td.active[disabled],.datepicker td.active[disabled]:hover{background-color:#0044cc;*background-color:#003bb3}.datepicker td.active:active,.datepicker td.active:hover:active,.datepicker td.active.active,.datepicker td.active.active:hover{background-color:#003399 \9}.datepicker td span{display:block;width:47px;height:54px;line-height:54px;float:left;margin:2px;cursor:pointer;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.datepicker td span:hover{background:#eeeeee}.datepicker td span.active{background-color:#006dcc;background-image:-moz-linear-gradient(top, #08c, #04c);background-image:-ms-linear-gradient(top, #08c, #04c);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#08c), to(#04c));background-image:-webkit-linear-gradient(top, #08c, #04c);background-image:-o-linear-gradient(top, #08c, #04c);background-image:linear-gradient(top, #08c, #04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);border-color:#0044cc #0044cc #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#0044cc;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.datepicker td span.active:hover,.datepicker td span.active:active,.datepicker td span.active.active,.datepicker td span.active.disabled,.datepicker td span.active[disabled]{background-color:#0044cc;*background-color:#003bb3}.datepicker td span.active:active,.datepicker td span.active.active{background-color:#003399 \9}.datepicker td span.old{color:#999999}.datepicker th.switch{width:145px}.datepicker thead tr:first-child th{cursor:pointer}.datepicker thead tr:first-child th:hover{background:#eeeeee}.input-append.date .add-on i,.input-prepend.date .add-on i{display:block;cursor:pointer;width:16px;height:16px}fieldset.token-input-mac{position:relative;padding:0;margin:5px 0;background:#fef;width:400px;border:1px solid #A4BDEC;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px}fieldset.token-input-mac.token-input-dropdown-mac{border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;-webkit-border-radius:10px 10px 0 0;box-shadow:0 5px 20px 0 rgba(0,0,0,0.25);-moz-box-shadow:0 5px 20px 0 rgba(0,0,0,0.25);-webkit-box-shadow:0 5px 20px 0 rgba(0,0,0,0.25)}ul.token-input-list-mac{overflow:hidden;height:auto !important;height:1%;cursor:text;font-size:12px;min-height:1px;z-index:999999;margin:0;padding:3px;background:transparent}ul.token-input-list-mac.error{border:1px solid #C52020}ul.token-input-list-mac li{list-style-type:none;white-space:nowrap;overflow:visible;padding-right:6px}li.token-input-token-mac p{display:inline;padding:0;margin:0}li.token-input-token-mac img{height:18px;width:18px;margin-right:4px;margin-left:-9px;margin-top:-1px;border:1px solid #999;display:inline-block;float:left;background:#fff;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}li.token-input-token-mac span{color:#aaa;margin-left:5px;font-weight:bold;cursor:pointer}li.token-input-token-mac{font-size:14px;line-height:18px;overflow:hidden;height:18px;margin:3px;padding:0 8px;background:none;background-color:#f6f6f6;color:#000;cursor:default;border:1px solid #bbb;border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;float:left}li.token-input-highlighted-token-mac{background-color:#eee;border:1px solid #aaa;color:#000}li.token-input-selected-token-mac{background-color:#555;border:1px solid transparent;color:#fff}li.token-input-token-mac span.token-input-delete-token-mac{padding-right:3px}li.token-input-highlighted-token-mac span.token-input-delete-token-mac{color:#000}li.token-input-selected-token-mac span.token-input-delete-token-mac{color:#fff}li.token-input-input-token-mac{border:none;background:transparent;float:left;padding:0;margin:0}li.token-input-input-token-mac input{border:0;min-width:10px;font-size:14px;width:100px;padding:5px 3px 3px;background-color:transparent;margin:0;outline:none !important;box-shadow:none !important;-webkit-box-shadow:none !important;border:none !important}div.token-input-dropdown-mac{position:fixed;border:none;left:-1px;right:-1px;background:#fff;background:rgba(255,255,255,0.93);border:1px solid #999;border-top-color:#bbb;border-bottom-color:#bbb;overflow:hidden;cursor:default;font-size:10pt;padding:0px;clip:rect(0px, 1000px, 1000px, -10px);z-index:9991}div.token-input-dropdown-mac p{font-size:13px;margin:0;padding:5px 10px;color:#999}div.token-input-dropdown-mac h3.token-input-dropdown-category-mac{font-size:10pt;font-weight:bold;border:none;padding:0 5px;margin:0}div.token-input-dropdown-mac ul{margin:0;padding:0}div.token-input-dropdown-mac ul li{list-style-type:none;cursor:pointer;background:#fff;margin:0;padding:0 0 0 0}div.token-input-dropdown-mac ul li p{color:#000}div.token-input-dropdown-mac ul li img{width:26px;height:26px;border:1px solid #ccc;margin-right:5px;-webkit-border-radius:14px;-moz-border-radius:14px;border-radius:14px}div.token-input-dropdown-mac ul li.token-input-dropdown-item-mac span.token-input-dropdown-item-description-mac{float:right;font-size:14pt;padding:0 10px 0 0;color:#000}div.token-input-dropdown-mac ul li strong{font-weight:bold;text-decoration:underline;font-style:none}div.token-input-dropdown-mac ul li.token-input-selected-dropdown-item-mac,div.token-input-dropdown-mac ul li.token-input-selected-dropdown-item-mac.odd{background-color:#eee;color:#000}div.token-input-dropdown-mac ul li.token-input-selected-dropdown-item-mac span.token-input-dropdown-item-description-mac,div.token-input-dropdown-mac ul li.token-input-selected-dropdown-item-mac.odd span.token-input-dropdown-item-description-mac{color:#fff}.switchery{background-color:#fff;border:1px solid #dfdfdf;border-radius:20px;cursor:pointer;display:inline-block;height:30px;position:relative;vertical-align:middle;width:50px}.switchery>small{background:#fff;border-radius:100%;box-shadow:0 1px 3px rgba(0,0,0,0.4);height:30px;position:absolute;top:0;width:30px}
 
 
 
@@ -4975,9 +4975,9 @@ a.badge:hover {
     padding: 0;
     border: 0;
     outline: 0;
-    lineHeight: 1.3;
+    line-height: 1.3;
     text-decoration: none;
-    fontSize: 100%;
+    font-size: 100%;
     list-style: none
 }
 
@@ -5045,7 +5045,7 @@ a.badge:hover {
 }
 
 .ui-menu .ui-menu {
-    marginTop: -3px;
+    margin-top: -3px;
     position: absolute
 }
 
@@ -5058,8 +5058,8 @@ a.badge:hover {
 .ui-menu .ui-menu-divider {
     margin: 5px -2px 5px -2px;
     height: 0;
-    fontSize: 0;
-    lineHeight: 0;
+    font-size: 0;
+    line-height: 0;
     border-width: 1px 0 0 0
 }
 
@@ -5067,21 +5067,21 @@ a.badge:hover {
     text-decoration: none;
     display: block;
     padding: 2px .4em;
-    lineHeight: 1.5;
+    line-height: 1.5;
     min-height: 0;
-    fontWeight: normal
+    font-weight: normal
 }
 
 .ui-menu .ui-menu-item a.ui-state-focus,
 .ui-menu .ui-menu-item a.ui-state-active {
-    fontWeight: normal;
+    font-weight: normal;
     margin: -1px
 }
 
 .ui-menu .ui-state-disabled {
-    fontWeight: normal;
+    font-weight: normal;
     margin: .4em 0 .2em;
-    lineHeight: 1.5
+    line-height: 1.5
 }
 
 .ui-menu .ui-state-disabled a {
@@ -5110,11 +5110,11 @@ a.badge:hover {
 
 .ui-widget {
     font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
-    fontSize: 1.1em
+    font-size: 1.1em
 }
 
 .ui-widget .ui-widget {
-    fontSize: 1em
+    font-size: 1em
 }
 
 .ui-widget input,
@@ -5122,7 +5122,7 @@ a.badge:hover {
 .ui-widget textarea,
 .ui-widget button {
     font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
-    fontSize: 1em
+    font-size: 1em
 }
 
 .ui-widget-content {
@@ -5139,7 +5139,7 @@ a.badge:hover {
     border: 1px solid #e78f08;
     background: #f6a828 50% 50% repeat-x;
     color: #ffffff;
-    fontWeight: bold
+    font-weight: bold
 }
 
 .ui-widget-header a {
@@ -5151,7 +5151,7 @@ a.badge:hover {
 .ui-widget-header .ui-state-default {
     border: 1px solid #cccccc;
     background: #f6f6f6 50% 50% repeat-x;
-    fontWeight: bold;
+    font-weight: bold;
     color: #1c94c4
 }
 
@@ -5170,7 +5170,7 @@ a.badge:hover {
 .ui-widget-header .ui-state-focus {
     border: 1px solid #fbcb09;
     background: #fdf5ce 50% 50% repeat-x;
-    fontWeight: bold;
+    font-weight: bold;
     color: #c77405
 }
 
@@ -5187,7 +5187,7 @@ a.badge:hover {
 .ui-widget-header .ui-state-active {
     border: 1px solid #fbd850;
     background: #ffffff 50% 50% repeat-x;
-    fontWeight: bold;
+    font-weight: bold;
     color: #eb8f00
 }
 
@@ -5235,7 +5235,7 @@ a.badge:hover {
 .ui-priority-primary,
 .ui-widget-content .ui-priority-primary,
 .ui-widget-header .ui-priority-primary {
-    fontWeight: bold
+    font-weight: bold
 }
 
 .ui-priority-secondary,
@@ -5243,7 +5243,7 @@ a.badge:hover {
 .ui-widget-header .ui-priority-secondary {
     opacity: .7;
     filter: alpha(opacity=70);
-    fontWeight: normal
+    font-weight: normal
 }
 
 .ui-state-disabled,
@@ -6010,7 +6010,7 @@ a.badge:hover {
     font-family: 'FontAwesome';
     src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0/fontawesome-webfont.eot");
     src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0/fontawesome-webfont.woff") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0/fontawesome-webfont.ttf") format("truetype"), url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0/fontawesome-webfont.eot#FontAwesome") format("svg");
-    fontWeight: normal;
+    font-weight: normal;
     font-style: normal
 }
 
@@ -6019,7 +6019,7 @@ a.badge:hover {
     display: inline;
     width: auto;
     height: auto;
-    lineHeight: inherit;
+    line-height: inherit;
     vertical-align: baseline;
     background-image: none;
     background-position: 0% 0%;
@@ -6034,7 +6034,7 @@ li[class*=" icon-"] {
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
     font-family: FontAwesome;
-    fontWeight: normal;
+    font-weight: normal;
     font-style: normal;
     display: inline-block;
     text-decoration: inherit
@@ -6048,14 +6048,14 @@ a [class*=" icon-"] {
 
 .icon-large:before {
     vertical-align: middle;
-    fontSize: 1.3333333333333333em
+    font-size: 1.3333333333333333em
 }
 
 .btn [class^="icon-"],
 .nav-tabs [class^="icon-"],
 .btn [class*=" icon-"],
 .nav-tabs [class*=" icon-"] {
-    lineHeight: .9em
+    line-height: .9em
 }
 
 li [class^="icon-"],
@@ -6957,7 +6957,7 @@ div#body-min-width {
 }
 
 .navbar {
-    fontSize: 14px
+    font-size: 14px
 }
 
 @media (max-width: 980px) {
@@ -6975,7 +6975,7 @@ div#body-min-width {
 
 .navbar-admin {
     background-color: #48be9d;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .navbar-admin .active a {
@@ -7010,7 +7010,7 @@ div#body-min-width {
 
 .nav.pull-right {
     white-space: nowrap;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .nav.pull-right>li {
@@ -7019,7 +7019,7 @@ div#body-min-width {
 }
 
 .nav.pull-right ul.dropdown-menu li a {
-    lineHeight: 22px;
+    line-height: 22px;
     padding-left: 10px;
     padding-right: 10px;
     text-shadow: none
@@ -7039,14 +7039,14 @@ div#body-min-width {
 
 .nav.pull-right ul.dropdown-menu li.li-header {
     padding: 4px 10px 1px;
-    fontSize: 12px;
+    font-size: 12px;
     text-shadow: none;
     color: #999;
     text-Transform: uppercase
 }
 
 .nav.pull-right ul.dropdown-menu span.beta {
-    fontSize: 10px;
+    font-size: 10px;
     text-Transform: uppercase;
     color: #999
 }
@@ -7097,7 +7097,7 @@ div#body-min-width {
 }
 
 .header .nav>li>a {
-    marginTop: 8px
+    margin-top: 8px
 }
 
 .navbar .nav img,
@@ -7107,7 +7107,7 @@ div#body-min-width {
     border: 1px solid #3eaf8f;
     background: #3eaf8f;
     border-radius: 12px;
-    marginTop: -5px;
+    margin-top: -5px;
     margin-right: 2px
 }
 
@@ -7119,7 +7119,7 @@ div#body-min-width {
 .navbar .dropdown-menu,
 .header .nav.pull-right .dropdown-menu {
     padding: 0;
-    marginTop: -1px;
+    margin-top: -1px;
     margin-left: -135px
 }
 
@@ -7183,31 +7183,31 @@ a.notification span {
 
 a.notification span.btn-orange {
     display: inline-block;
-    marginTop: 5px
+    margin-top: 5px
 }
 
 a.notification .undelete {
     float: right;
     white-space: normal;
     padding: 3px 10px;
-    lineHeight: 16px;
-    fontSize: 12px;
+    line-height: 16px;
+    font-size: 12px;
     border-radius: 3px;
     margin-left: 20px
 }
 
 a.notification .undelete.expense {
-    marginTop: 17px
+    margin-top: 17px
 }
 
 a.notification .undelete.group {
-    marginTop: 7px
+    margin-top: 7px
 }
 
 a.notification .net_balance {
     color: #aaa;
-    fontSize: 12px;
-    marginTop: -1px
+    font-size: 12px;
+    margin-top: -1px
 }
 
 a.notification .net_balance.negative {
@@ -7227,9 +7227,9 @@ a.notification .net_balance.strikethrough {
 }
 
 a.notification .added_by {
-    fontSize: 10px;
+    font-size: 10px;
     color: #aaa;
-    marginTop: -3px
+    margin-top: -3px
 }
 
 a.notification .notification-content {
@@ -7311,8 +7311,8 @@ body {
     background: #fff;
     background: rgba(255, 255, 255, 0.8);
     color: #ccc;
-    fontSize: 24px;
-    fontWeight: normal;
+    font-size: 24px;
+    font-weight: normal;
     z-index: 999
 }
 
@@ -7402,7 +7402,7 @@ body {
 
 #topbar .container {
     color: #999;
-    fontSize: 13px
+    font-size: 13px
 }
 
 #topbar .container .summary-block {
@@ -7417,7 +7417,7 @@ body {
 }
 
 #topbar .container .summary-block .amount {
-    fontSize: 14px;
+    font-size: 14px;
     color: #ff652f
 }
 
@@ -7472,8 +7472,8 @@ body {
     max-width: 315px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    fontSize: 24px !important;
-    lineHeight: 38px;
+    font-size: 24px !important;
+    line-height: 38px;
     height: 38px;
     display: inline-block;
     vertical-align: middle;
@@ -7522,7 +7522,7 @@ body {
 }
 
 .topbar .actions .btn-group .dropdown-menu.quick-add form {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 .topbar .actions .btn-group .dropdown-menu.quick-add form input {
@@ -7550,27 +7550,27 @@ body {
 
 .topbar #quick_add input {
     width: 200px;
-    fontSize: 16px
+    font-size: 16px
 }
 
 .topbar #quick_add div.sample {
-    marginTop: 7px;
-    marginBottom: -2px;
+    margin-top: 7px;
+    margin-bottom: -2px;
     color: #666;
-    fontSize: 12px
+    font-size: 12px
 }
 
 .topbar #quick_add div.status {
-    marginTop: 10px;
+    margin-top: 10px;
     border-top: 1px solid #eee;
     padding-top: 4px;
     padding-left: 29px;
-    fontSize: 14px
+    font-size: 14px
 }
 
 .topbar #quick_add div.status h3 {
     margin-left: -29px;
-    fontSize: 11px;
+    font-size: 11px;
     text-Transform: uppercase;
     color: #666
 }
@@ -7588,7 +7588,7 @@ body {
 }
 
 .topbar #quick_add div.status .more_info {
-    fontSize: 12px;
+    font-size: 12px;
     color: #999
 }
 
@@ -7680,8 +7680,8 @@ body {
 
 .btn-gray.btn-settings {
     padding: 6px 1px 2px 3px;
-    fontSize: 22px;
-    lineHeight: 28px
+    font-size: 22px;
+    line-height: 28px
 }
 
 .btn-gray.btn-settings.dropdown-toggle {
@@ -7690,7 +7690,7 @@ body {
 }
 
 .btn-gray.btn-settings .caret {
-    marginTop: 9px
+    margin-top: 9px
 }
 
 .btn-mint .caret,
@@ -7736,7 +7736,7 @@ body {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     color: #777;
-    fontSize: 14px
+    font-size: 14px
 }
 
 .btn-google-login:hover {
@@ -7755,7 +7755,7 @@ body {
 #fat_rabbit .flex_container.blank_page .btn-large.btn-facebook {
     padding: 4px 6px;
     margin: 0 0 3px 0;
-    fontSize: 13px;
+    font-size: 13px;
     color: #777
 }
 
@@ -7799,8 +7799,8 @@ body {
 #left_sidebar #view_links #notifications_link {
     margin: 11px 0 0;
     padding: 3px 8px 5px 5px;
-    fontSize: 16px;
-    lineHeight: 21px
+    font-size: 16px;
+    line-height: 21px
 }
 
 #left_sidebar #view_links #dashboard_link span,
@@ -7847,8 +7847,8 @@ body {
     margin-left: 5px;
     background: #f6f6f6;
     color: #ccc;
-    fontSize: 11px;
-    marginTop: 5px;
+    font-size: 11px;
+    margin-top: 5px;
     border-top: 1px solid #f3f3f3;
     border-bottom: 1px solid #eee;
     text-Transform: uppercase;
@@ -7863,7 +7863,7 @@ body {
     border: none;
     padding: 0;
     float: right;
-    fontSize: inherit;
+    font-size: inherit;
     text-Transform: lowercase
 }
 
@@ -7888,7 +7888,7 @@ body {
     padding: 5px 10px 2px;
     text-align: center;
     color: #ccc;
-    fontSize: 12px;
+    font-size: 12px;
     white-space: normal
 }
 
@@ -7900,7 +7900,7 @@ body {
     color: inherit;
     display: block;
     height: 19px;
-    fontSize: 14px;
+    font-size: 14px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -7912,7 +7912,7 @@ body {
 #left_sidebar #view_links a i {
     margin-right: 1px;
     vertical-align: 0px;
-    fontWeight: bold
+    font-weight: bold
 }
 
 #left_sidebar #view_links a:hover {
@@ -7923,13 +7923,13 @@ body {
 #left_sidebar #view_links a.open {
     border-left: 6px solid #5bc5a7;
     color: #5bc5a7;
-    fontWeight: bold
+    font-weight: bold
 }
 
 #left_sidebar #view_links a.show_inactive_accounts {
-    fontSize: 11px;
-    lineHeight: 15px;
-    marginTop: 5px;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 5px;
     padding-top: 4px;
     padding-bottom: 4px;
     color: #ccc;
@@ -7963,7 +7963,7 @@ body {
 
 #left_sidebar #view_links div.input-prepend {
     margin: 0 0 8px 10px;
-    fontSize: 14px
+    font-size: 14px
 }
 
 #left_sidebar #view_links div.input-prepend span {
@@ -7974,7 +7974,7 @@ body {
     width: 127px;
     margin: 0 auto;
     padding: 2px 3px;
-    fontSize: 13px;
+    font-size: 13px;
     border-color: #ccc;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -8005,7 +8005,7 @@ body {
     height: auto;
     margin: 5px 0 0;
     padding: 2px 10px 2px 3px;
-    fontSize: 14px;
+    font-size: 14px;
     border-left: none
 }
 
@@ -8039,7 +8039,7 @@ body {
     width: 45px;
     text-align: center;
     padding: 5px 5px 3px;
-    fontSize: 14px;
+    font-size: 14px;
     color: #999;
     -webkit-transition: e("color 0.05s ease");
     -moz-transition: e("color 0.05s ease");
@@ -8085,11 +8085,11 @@ body {
 
 #right_sidebar .nav {
     padding-top: 13px;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 #right_sidebar .nav i {
-    fontSize: 18px
+    font-size: 18px
 }
 
 #right_sidebar .nav a {
@@ -8128,9 +8128,9 @@ body {
 }
 
 #right_sidebar h2 {
-    marginTop: 12px;
-    fontSize: 13px;
-    lineHeight: 24px;
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 24px;
     color: #999;
     text-Transform: uppercase
 }
@@ -8147,9 +8147,9 @@ body {
     padding: 4px 6px;
     width: 145px;
     height: 35px;
-    fontSize: 13px;
+    font-size: 13px;
     color: #333;
-    lineHeight: 17px
+    line-height: 17px
 }
 
 #right_sidebar .quick_actions a i,
@@ -8157,7 +8157,7 @@ body {
     float: left;
     text-align: center;
     display: block;
-    fontSize: 40px;
+    font-size: 40px;
     width: 40px;
     height: 40px;
     margin-right: 5px
@@ -8170,17 +8170,17 @@ body {
 
 #right_sidebar div.balance_summary {
     color: #999;
-    fontSize: 16px;
-    lineHeight: 24px;
-    marginTop: 5px;
-    marginBottom: 10px
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-bottom: 10px
 }
 
 #right_sidebar div.balance_summary .amount {
     display: block;
-    fontSize: 28px;
-    lineHeight: 22px;
-    fontWeight: bold
+    font-size: 28px;
+    line-height: 22px;
+    font-weight: bold
 }
 
 #right_sidebar div.balance_summary.negative {
@@ -8196,20 +8196,20 @@ body {
 }
 
 #right_sidebar a.details {
-    fontSize: 14px;
+    font-size: 14px;
     display: block;
-    marginTop: 5px
+    margin-top: 5px
 }
 
 #right_sidebar #relationship_balances .toggle-balances-list {
-    marginBottom: 10px
+    margin-bottom: 10px
 }
 
 #right_sidebar #relationship_balances .toggle-balances-list .btn {
     padding: 2px 5px 1px;
     text-align: center;
     display: inline-block;
-    fontSize: 12px;
+    font-size: 12px;
     color: #999;
     background: #fff;
     text-shadow: none;
@@ -8221,7 +8221,7 @@ body {
 }
 
 #right_sidebar #relationship_balances .toggle-balances-list .btn i {
-    fontSize: 14px;
+    font-size: 14px;
     margin-right: 2px;
     vertical-align: -1px
 }
@@ -8241,14 +8241,14 @@ body {
     background: #eee;
     border: 1px solid #ddd;
     padding: 6px 7px 3px;
-    marginBottom: 8px;
-    marginTop: 5px;
-    fontSize: 12px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    font-size: 12px;
     display: inline-block
 }
 
 #right_sidebar #relationship_balances .simplify_on i {
-    fontSize: 15px;
+    font-size: 15px;
     margin-left: 3px;
     vertical-align: -2px;
     cursor: pointer;
@@ -8264,20 +8264,20 @@ body {
 }
 
 #right_sidebar #relationship_balances .breakdown {
-    marginTop: 15px
+    margin-top: 15px
 }
 
 #right_sidebar #relationship_balances .breakdown ul {
-    fontSize: 14px;
-    lineHeight: 15px;
+    font-size: 14px;
+    line-height: 15px;
     color: #333;
     margin: 3px 0 0 16px
 }
 
 #right_sidebar #relationship_balances .breakdown ul li {
-    fontSize: 12px;
+    font-size: 12px;
     list-style: disc;
-    marginBottom: 4px
+    margin-bottom: 4px
 }
 
 #right_sidebar #relationship_balances .breakdown ul .positive .amount {
@@ -8289,14 +8289,14 @@ body {
 }
 
 #right_sidebar #relationship_balances .breakdown ul .amount {
-    fontSize: 13px;
-    fontWeight: bold
+    font-size: 13px;
+    font-weight: bold
 }
 
 #right_sidebar #relationship_balances .calc_links .btn {
     display: block;
     margin: 10px 15px 10px 0;
-    lineHeight: 16px;
+    line-height: 16px;
     padding-bottom: 5px
 }
 
@@ -8309,9 +8309,9 @@ body {
 #right_sidebar #relationship_balances .calc_links .btn i {
     display: block;
     height: 50px;
-    lineHeight: 50px;
+    line-height: 50px;
     margin: 0 4px -2px 0;
-    fontSize: 50px
+    font-size: 50px
 }
 
 #right_sidebar #relationship_balances .exchange_rates {
@@ -8328,17 +8328,17 @@ body {
     vertical-align: top;
     padding: 8px 0 8px 55px;
     margin-left: -8px;
-    fontSize: 13px;
+    font-size: 13px;
     color: #444;
     text-decoration: none
 }
 
 #right_sidebar a.personal_balance .name {
-    marginTop: 3px;
+    margin-top: 3px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    fontSize: 14px
+    font-size: 14px
 }
 
 #right_sidebar a.personal_balance img.avatar {
@@ -8361,9 +8361,9 @@ body {
 }
 
 #right_sidebar a.personal_balance .balance {
-    marginTop: 0px;
-    fontSize: 12px;
-    lineHeight: 14px
+    margin-top: 0px;
+    font-size: 12px;
+    line-height: 14px
 }
 
 #right_sidebar a.personal_balance .balance.i_owe {
@@ -8379,8 +8379,8 @@ body {
 }
 
 #right_sidebar a.personal_balance .balance .amount {
-    fontSize: 14px;
-    fontWeight: bold
+    font-size: 14px;
+    font-weight: bold
 }
 
 #right_sidebar a.personal_balance:hover {
@@ -8394,7 +8394,7 @@ body {
 #right_sidebar #relationship_settings a {
     padding-left: 6px;
     padding-right: 2px;
-    fontSize: 12px;
+    font-size: 12px;
     text-align: left;
     display: block;
     margin: 5px 0 0
@@ -8405,7 +8405,7 @@ body {
 }
 
 #right_sidebar #charts .net_change {
-    marginBottom: 10px
+    margin-bottom: 10px
 }
 
 #right_sidebar #charts .amount {
@@ -8422,8 +8422,8 @@ body {
 
 #right_sidebar #charts .amount.big.positive,
 #right_sidebar #charts .amount.big.negative {
-    fontSize: 18px;
-    fontWeight: bold
+    font-size: 18px;
+    font-weight: bold
 }
 
 #right_sidebar #ad_block {
@@ -8442,9 +8442,9 @@ body {
     height: auto;
     margin: 0;
     padding: 2px 10px 2px 3px;
-    fontSize: 14px;
+    font-size: 14px;
     border-left: none;
-    marginTop: 10px
+    margin-top: 10px
 }
 
 .ads_disabled .social a.btn :hover {
@@ -8503,7 +8503,7 @@ body {
     right: -10px;
     height: 0;
     width: 0;
-    marginTop: -5px;
+    margin-top: -5px;
     border: 5px solid transparent;
     border-left-color: rgba(0, 0, 0, 0.9)
 }
@@ -8535,17 +8535,17 @@ body {
     width: 50px;
     height: 50px;
     margin-right: 10px;
-    marginBottom: 10px
+    margin-bottom: 10px
 }
 
 #center_column .friend.header .user_info {
     display: inline-block;
     padding-top: 4px;
-    lineHeight: 22px
+    line-height: 22px
 }
 
 #center_column .friend.header .email {
-    fontSize: 16px;
+    font-size: 16px;
     color: #999
 }
 
@@ -8559,7 +8559,7 @@ body {
 }
 
 #center_column #dashboard_balances h2 {
-    fontSize: 14px;
+    font-size: 14px;
     text-Transform: uppercase;
     color: #999;
     padding: 5px 0
@@ -8570,7 +8570,7 @@ body {
 }
 
 #center_column #dashboard_balances .total_balances {
-    fontSize: 0px;
+    font-size: 0px;
     margin: -10px -15px 0;
     padding: 7px 0 2px;
     background: #eee;
@@ -8585,8 +8585,8 @@ body {
     text-align: center;
     padding: 0 5px;
     border-left: 1px solid #ddd;
-    lineHeight: 16px;
-    fontSize: 13px
+    line-height: 16px;
+    font-size: 13px
 }
 
 #center_column #dashboard_balances .total_balances .block:first-child {
@@ -8602,7 +8602,7 @@ body {
 }
 
 #center_column #dashboard_balances .total_balances .multiple_currencies {
-    fontSize: 12px;
+    font-size: 12px;
     border-top: 1px solid #ddd;
     padding-top: 4px
 }
@@ -8616,7 +8616,7 @@ body {
     padding: 2px 5px 1px;
     text-align: center;
     display: inline-block;
-    fontSize: 12px;
+    font-size: 12px;
     color: #999;
     background: #fff;
     border-color: rgba(0, 0, 0, 0.1);
@@ -8628,7 +8628,7 @@ body {
 }
 
 #center_column #dashboard_balances .toggle-chart-list .btn i {
-    fontSize: 14px;
+    font-size: 14px;
     margin-right: 2px;
     vertical-align: -1px
 }
@@ -8659,8 +8659,8 @@ body {
     vertical-align: top;
     text-align: center;
     width: 110px;
-    fontSize: 12px;
-    lineHeight: 15px
+    font-size: 12px;
+    line-height: 15px
 }
 
 #center_column #dashboard_balances .summary div.img img {
@@ -8668,23 +8668,23 @@ body {
     vertical-align: top;
     width: 83px;
     height: 182px;
-    marginTop: 8px;
-    marginBottom: 10px
+    margin-top: 8px;
+    margin-bottom: 10px
 }
 
 #center_column #dashboard_balances .summary .balances {
     display: inline-block;
     vertical-align: top;
     width: 208px;
-    marginTop: 10px
+    margin-top: 10px
 }
 
 #center_column #dashboard_balances .summary .balances .bar {
     cursor: pointer;
     display: inline-block;
-    marginBottom: 5px;
+    margin-bottom: 5px;
     min-width: 27px;
-    lineHeight: 16px;
+    line-height: 16px;
     height: 41px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -8702,9 +8702,9 @@ body {
 
 #center_column #dashboard_balances .summary .balances .bar .name {
     display: block;
-    lineHeight: 20px;
-    fontSize: 16px;
-    fontWeight: bold;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
     color: #fff;
     text-decoration: none;
     text-overflow: ellipsis;
@@ -8714,7 +8714,7 @@ body {
 
 #center_column #dashboard_balances .summary .balances .bar .amount {
     display: block;
-    fontSize: 14px;
+    font-size: 14px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap
@@ -8738,7 +8738,7 @@ body {
 
 #center_column #dashboard_balances .summary .list {
     text-align: left;
-    marginTop: 4px
+    margin-top: 4px
 }
 
 #center_column #dashboard_balances .summary .list .negatives,
@@ -8782,7 +8782,7 @@ body {
 #center_column #dashboard_balances li.relationship>a {
     display: block;
     padding: 7px 13px 7px 13px;
-    fontSize: 16px;
+    font-size: 16px;
     text-decoration: none;
     color: #000
 }
@@ -8793,8 +8793,8 @@ body {
 
 #center_column #dashboard_balances li.relationship .balance {
     text-align: left;
-    fontSize: 13px;
-    lineHeight: 16px
+    font-size: 13px;
+    line-height: 16px
 }
 
 #center_column #dashboard_balances li.relationship .balance.owes_me {
@@ -8810,14 +8810,14 @@ body {
 }
 
 #center_column #dashboard_balances li.relationship .balance .amount {
-    fontWeight: bold;
-    fontSize: 14px
+    font-weight: bold;
+    font-size: 14px
 }
 
 #center_column #dashboard_balances li.relationship .balance_details {
-    fontSize: 11px;
+    font-size: 11px;
     color: #aaa;
-    lineHeight: 14px;
+    line-height: 14px;
     margin: 4px 0 0;
     padding-left: 17px
 }
@@ -8842,7 +8842,7 @@ body {
 
 #center_column #dashboard_balances #calculator_ad {
     display: block;
-    marginTop: 20px;
+    margin-top: 20px;
     border: 1px solid #ddd;
     background: #f6f6f6;
     text-align: center;
@@ -8854,14 +8854,14 @@ body {
     margin: 15px 10px 10px;
     text-align: right;
     padding: 23px 14px 10px 10px;
-    fontSize: 14px
+    font-size: 14px
 }
 
 #center_column #dashboard_balances .calculator.btn img {
     width: 80px;
     height: 80px;
     float: left;
-    marginTop: -13px
+    margin-top: -13px
 }
 
 #center_column #dashboard_balances .calculator.btn.renters {
@@ -8871,7 +8871,7 @@ body {
 }
 
 #center_column #dashboard_balances .calculator.btn.renters img {
-    marginTop: -6px
+    margin-top: -6px
 }
 
 #center_column #recent_activity h2 {
@@ -8881,9 +8881,9 @@ body {
 #center_column #recent_activity a.notification {
     padding: 16px;
     border-bottom: 1px solid #ddd;
-    fontSize: 16px;
+    font-size: 16px;
     padding-left: 72px;
-    lineHeight: 21px;
+    line-height: 21px;
     min-height: 40px;
     position: relative
 }
@@ -8898,7 +8898,7 @@ body {
 
 #center_column #recent_activity a.notification img.stamp {
     margin-left: 5px;
-    marginTop: 5px
+    margin-top: 5px
 }
 
 #center_column #recent_activity a.notification img.circle {
@@ -8915,7 +8915,7 @@ body {
 }
 
 #center_column #recent_activity a.notification small {
-    fontSize: 14px
+    font-size: 14px
 }
 
 #center_column #recent_activity a.notification span.description {
@@ -8924,22 +8924,22 @@ body {
 }
 
 #center_column #recent_activity a.notification span.net_balance {
-    fontSize: 14px;
-    marginTop: 2px
+    font-size: 14px;
+    margin-top: 2px
 }
 
 #center_column #recent_activity a.notification span.added_by {
-    fontSize: 13px;
-    marginTop: 0px;
-    marginTop: 1px
+    font-size: 13px;
+    margin-top: 0px;
+    margin-top: 1px
 }
 
 #center_column #recent_activity a.notification span.date {
     display: block;
-    marginTop: 3px;
-    fontSize: 13px;
+    margin-top: 3px;
+    font-size: 13px;
     color: #999;
-    lineHeight: 14px
+    line-height: 14px
 }
 
 #center_column #recent_activity #load_more_notifications {
@@ -8973,7 +8973,7 @@ body {
     background: #eee;
     border-top: 1px solid #f6f6f6;
     border-bottom: 1px solid #ddd;
-    fontSize: 11px
+    font-size: 11px
 }
 
 .month-divider span {
@@ -9003,8 +9003,8 @@ body {
     padding: 10px;
     background: #fff;
     color: #999;
-    fontSize: 16px;
-    lineHeight: 22px
+    font-size: 16px;
+    line-height: 22px
 }
 
 .settle-point.no-expenses {
@@ -9060,15 +9060,15 @@ body {
     height: 35px;
     width: 35px;
     text-align: center;
-    fontSize: 10px;
+    font-size: 10px;
     text-Transform: uppercase;
     color: #999;
-    fontWeight: normal
+    font-weight: normal
 }
 
 .expense div.main-block div.date div.number {
-    marginTop: -3px;
-    fontSize: 20px
+    margin-top: -3px;
+    font-size: 20px
 }
 
 .expense div.main-block img.receipt {
@@ -9087,19 +9087,19 @@ body {
 }
 
 .expense div.main-block>.header {
-    fontSize: 16px;
-    fontWeight: bold;
+    font-size: 16px;
+    font-weight: bold;
     overflow-x: hidden;
     overflow-y: hidden;
     height: 40px;
-    marginTop: 0px
+    margin-top: 0px
 }
 
 .expense div.main-block>.header .description {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    marginTop: 9px;
+    margin-top: 9px;
     max-width: 200px;
     min-width: 150px;
     display: inline-block;
@@ -9107,7 +9107,7 @@ body {
 }
 
 .expense div.main-block>.header .description.grouped {
-    marginTop: 0px
+    margin-top: 0px
 }
 
 .expense div.main-block>.header .description i {
@@ -9121,7 +9121,7 @@ body {
 
 .expense div.main-block>.header .description .label {
     text-decoration: none;
-    fontSize: 10px;
+    font-size: 10px;
     vertical-align: 2px;
     margin-right: 2px
 }
@@ -9134,7 +9134,7 @@ body {
     display: inline-block;
     background: #eee;
     color: #666;
-    fontWeight: normal;
+    font-weight: normal;
     text-shadow: none;
     text-decoration: none;
     max-width: 350px;
@@ -9167,9 +9167,9 @@ body {
 }
 
 .expense div.main-block>.subheader {
-    marginTop: -5px;
-    fontSize: 11px;
-    marginBottom: 0;
+    margin-top: -5px;
+    font-size: 11px;
+    margin-bottom: 0;
     color: #999
 }
 
@@ -9180,7 +9180,7 @@ body {
 .expense div.main-block>.subheader .created_at,
 .expense div.main-block>.subheader .updated_at {
     color: #999;
-    fontSize: 11px
+    font-size: 11px
 }
 
 .expense div.main-block button.btn-small {
@@ -9192,8 +9192,8 @@ body {
     text-align: right;
     width: 100px;
     padding: 11px 10px 12px 5px;
-    fontSize: 12px;
-    lineHeight: 15px;
+    font-size: 12px;
+    line-height: 15px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -9205,8 +9205,8 @@ body {
 
 .expense>div.cost .number {
     color: #000;
-    fontWeight: bold;
-    fontSize: 16px
+    font-weight: bold;
+    font-size: 16px
 }
 
 .expense div.you {
@@ -9218,22 +9218,22 @@ body {
     text-overflow: ellipsis;
     vertical-align: top;
     padding: 11px 4px 12px;
-    fontSize: 12px;
+    font-size: 12px;
     width: 127px;
     color: #aaa;
-    lineHeight: 15px
+    line-height: 15px
 }
 
 .expense div.you .positive {
     color: #5bc5a7;
-    fontWeight: bold;
-    fontSize: 16px
+    font-weight: bold;
+    font-size: 16px
 }
 
 .expense div.you .negative {
     color: #ff652f;
-    fontWeight: bold;
-    fontSize: 16px
+    font-weight: bold;
+    font-size: 16px
 }
 
 .expense div.you i {
@@ -9261,7 +9261,7 @@ body {
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    fontSize: 14px;
+    font-size: 14px;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5)
@@ -9298,15 +9298,15 @@ body {
     display: none;
     vertical-align: top;
     padding-top: 9px;
-    fontSize: 12px;
+    font-size: 12px;
     width: 0px
 }
 
 .expense div.actions a.delete {
     color: #c00;
     background: rgba(249, 249, 249, 0.8);
-    fontWeight: bold;
-    fontSize: 24px;
+    font-weight: bold;
+    font-size: 24px;
     position: absolute;
     top: 12px;
     right: 5px;
@@ -9349,42 +9349,42 @@ body {
 }
 
 .expense>.users h3 {
-    fontSize: 16px;
-    fontWeight: normal;
+    font-size: 16px;
+    font-weight: normal;
     overflow: hidden;
     text-overflow: ellipsis
 }
 
 .expense>.users h4 {
-    fontSize: 12px;
-    marginTop: 8px;
-    marginBottom: 2px;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 2px;
     text-Transform: uppercase;
     color: #999
 }
 
 .expense>.users .cost {
-    marginTop: -1px;
-    fontSize: 20px;
-    fontWeight: bold
+    margin-top: -1px;
+    font-size: 20px;
+    font-weight: bold
 }
 
 .expense>.users .creation_info {
-    marginTop: 3px;
+    margin-top: 3px;
     padding-bottom: 13px;
     padding-left: 96px;
-    fontSize: 12px;
+    font-size: 12px;
     color: #999
 }
 
 .expense>.users div.receipt {
     float: right;
     margin-left: 10px;
-    marginBottom: 10px
+    margin-bottom: 10px
 }
 
 .expense>.users div.receipt h4 {
-    marginTop: -1px
+    margin-top: -1px
 }
 
 .expense>.users div.receipt img.receipt {
@@ -9414,11 +9414,11 @@ body {
     border-radius: 20px;
     border: 1px solid #ccc;
     margin-right: 8px;
-    marginTop: -2px
+    margin-top: -2px
 }
 
 .expense>.users tr.user strong {
-    fontWeight: bold
+    font-weight: bold
 }
 
 .expense div.comment {
@@ -9428,7 +9428,7 @@ body {
     border-radius: 5px;
     padding: 6px 8px;
     background: #fff;
-    marginBottom: 8px;
+    margin-bottom: 8px;
     word-wrap: break-word
 }
 
@@ -9437,10 +9437,10 @@ body {
 }
 
 .expense div.comment.System {
-    fontSize: 11px;
+    font-size: 11px;
     background: none;
     color: #666;
-    lineHeight: 16px
+    line-height: 16px
 }
 
 .expense div.comment.deleted {
@@ -9448,25 +9448,25 @@ body {
     padding: 0;
     border: none;
     color: #999;
-    fontSize: 11px
+    font-size: 11px
 }
 
 .expense div.comment .header {
-    fontWeight: bold
+    font-weight: bold
 }
 
 .expense div.comment .header .timestamp {
     margin-left: 3px;
     color: #999;
-    fontSize: 11px;
-    fontWeight: normal
+    font-size: 11px;
+    font-weight: normal
 }
 
 .expense div.comment .header .delete_comment {
     float: right;
     color: #c00;
-    fontWeight: bold;
-    fontSize: 18px;
+    font-weight: bold;
+    font-size: 18px;
     margin: -1px -1px 5px 5px;
     cursor: pointer
 }
@@ -9476,16 +9476,16 @@ body {
 }
 
 .expense .comments h4 {
-    marginBottom: 4px
+    margin-bottom: 4px
 }
 
 .expense .comments textarea {
     width: 200px;
-    marginBottom: 8px
+    margin-bottom: 8px
 }
 
 .expense .comments button {
-    fontSize: 13px;
+    font-size: 13px;
     padding: 3px 6px
 }
 
@@ -9509,7 +9509,7 @@ body {
 }
 
 .expense.payment {
-    lineHeight: 0px
+    line-height: 0px
 }
 
 .expense.payment .header {
@@ -9529,10 +9529,10 @@ body {
 .expense.payment div.main-block>.header {
     padding: 1px 0 0 0;
     margin: 0;
-    lineHeight: 14px;
+    line-height: 14px;
     height: auto;
-    fontSize: 12px;
-    fontWeight: normal;
+    font-size: 12px;
+    font-weight: normal;
     overflow: visible
 }
 
@@ -9541,15 +9541,15 @@ body {
     padding-left: 0;
     width: 24px;
     height: auto;
-    marginTop: -2px;
-    fontSize: 9px;
+    margin-top: -2px;
+    font-size: 9px;
     margin-right: 9px;
-    lineHeight: 12px
+    line-height: 12px
 }
 
 .expense.payment div.main-block>.header .date .number {
-    fontSize: 12px;
-    lineHeight: 16px
+    font-size: 12px;
+    line-height: 16px
 }
 
 .expense.payment div.main-block>.header img {
@@ -9559,7 +9559,7 @@ body {
 }
 
 .expense.payment div.main-block>.header .description {
-    marginTop: 3px;
+    margin-top: 3px;
     max-width: 285px;
     vertical-align: middle;
     overflow: hidden;
@@ -9613,13 +9613,13 @@ body {
 
 #charts_modal h4 {
     text-align: center;
-    fontSize: 16px;
-    lineHeight: 26px
+    font-size: 16px;
+    line-height: 26px
 }
 
 #charts_modal h4 a {
-    fontSize: 14px;
-    fontWeight: normal;
+    font-size: 14px;
+    font-weight: normal;
     display: inline-block;
     text-align: center;
     min-width: 70px;
@@ -9677,9 +9677,9 @@ body {
 
 #charts_modal table th.summary div,
 #charts_modal table td.summary div {
-    fontSize: 11px;
+    font-size: 11px;
     color: #999;
-    lineHeight: 14px
+    line-height: 14px
 }
 
 #charts_modal table tr.block.top {
@@ -9696,7 +9696,7 @@ body {
 }
 
 #charts_modal table tr.total td {
-    fontWeight: bold
+    font-weight: bold
 }
 
 #charts_modal table tr.total td.summary div {
@@ -9709,10 +9709,10 @@ body {
 }
 
 #recurring_list div.bill h3 {
-    fontSize: 16px;
-    fontWeight: bold;
+    font-size: 16px;
+    font-weight: bold;
     color: #333;
-    lineHeight: 20px
+    line-height: 20px
 }
 
 #recurring_list div.bill h3 a {
@@ -9744,9 +9744,9 @@ body {
 }
 
 #whiteboard pre {
-    marginTop: 5px;
+    margin-top: 5px;
     padding: 5px;
-    fontSize: 13px;
+    font-size: 13px;
     font-family: inherit
 }
 
@@ -9789,18 +9789,18 @@ body {
 
 #send_reminder.modal #reminder_summary {
     margin-left: 20px;
-    fontSize: 12px;
+    font-size: 12px;
     color: #999
 }
 
 #send_reminder.modal textarea {
     width: 97%;
     height: 200px;
-    marginTop: 10px
+    margin-top: 10px
 }
 
 #user_summary.modal button.close {
-    marginTop: -8px;
+    margin-top: -8px;
     z-index: 9999;
     position: relative
 }
@@ -9808,7 +9808,7 @@ body {
 #user_summary.modal .bio {
     position: relative;
     min-height: 50px;
-    fontSize: 18px
+    font-size: 18px
 }
 
 #user_summary.modal .bio img.avatar {
@@ -9824,20 +9824,20 @@ body {
     height: auto;
     width: auto;
     margin-right: 10px;
-    marginBottom: 15px
+    margin-bottom: 15px
 }
 
 #user_summary.modal .bio div.name {
-    fontSize: 24px;
+    font-size: 24px;
     padding-top: 1px;
-    marginBottom: 7px;
+    margin-bottom: 7px;
     margin-right: 20px;
-    fontWeight: bold
+    font-weight: bold
 }
 
 #user_summary.modal .bio div.email {
     color: #999;
-    fontSize: 14px
+    font-size: 14px
 }
 
 #user_summary.modal .bio div.actions {
@@ -9859,7 +9859,7 @@ body {
 }
 
 #user_summary.modal div.balance_summary .user_summary_chart_container .chart_label {
-    fontSize: 12px;
+    font-size: 12px;
     padding-left: 3px;
     color: #999
 }
@@ -9870,8 +9870,8 @@ body {
 }
 
 #user_summary.modal div.balance_summary .balance {
-    lineHeight: 20px;
-    fontSize: 16px;
+    line-height: 20px;
+    font-size: 16px;
     color: #999
 }
 
@@ -9884,8 +9884,8 @@ body {
 }
 
 #user_summary.modal div.balance_summary .balance .amount {
-    fontSize: 20px;
-    fontWeight: bold
+    font-size: 20px;
+    font-weight: bold
 }
 
 #user_summary.modal div.balance_summary h4 {
@@ -9907,7 +9907,7 @@ body {
 }
 
 #settle_up {
-    fontSize: 14px;
+    font-size: 14px;
     width: 750px;
     margin-left: -375px
 }
@@ -9926,7 +9926,7 @@ body {
 
 #settle_up #simplified_toggle i {
     padding-left: 2px;
-    fontSize: 18px;
+    font-size: 18px;
     vertical-align: -2px;
     cursor: pointer;
     color: #999
@@ -9999,20 +9999,20 @@ body {
 #settle_up table td {
     vertical-align: top;
     padding: 5px 10px 5px;
-    lineHeight: 18px;
+    line-height: 18px;
     text-align: left
 }
 
 #settle_up table td strong.name {
-    fontSize: 16px;
-    lineHeight: 18px;
+    font-size: 16px;
+    line-height: 18px;
     vertical-align: text-bottom
 }
 
 #settle_up table td .amount {
-    fontSize: 20px;
-    fontWeight: bold;
-    lineHeight: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 18px;
     vertical-align: text-bottom
 }
 
@@ -10021,7 +10021,7 @@ body {
 }
 
 #settle_up table td.name {
-    lineHeight: 22px;
+    line-height: 22px;
     padding-left: 0
 }
 
@@ -10035,8 +10035,8 @@ body {
 }
 
 #settle_up table h3 {
-    fontWeight: bold;
-    fontSize: 16px;
+    font-weight: bold;
+    font-size: 16px;
     color: #000
 }
 
@@ -10053,18 +10053,18 @@ body {
 }
 
 #settle_up table h3 .dash {
-    fontWeight: normal;
+    font-weight: normal;
     color: #999
 }
 
 #settle_up table h3 .balance {
-    fontSize: 14px;
-    fontWeight: normal
+    font-size: 14px;
+    font-weight: normal
 }
 
 #settle_up table h3 .balance .amount {
-    fontWeight: bold;
-    fontSize: 20px
+    font-weight: bold;
+    font-size: 20px
 }
 
 #settle_up table ul {
@@ -10112,7 +10112,7 @@ body {
 #settle_up .repayment a.btn {
     padding: 3px 5px;
     margin-left: 5px;
-    marginTop: 3px
+    margin-top: 3px
 }
 
 #settle_up .repayment:hover {
@@ -10121,7 +10121,7 @@ body {
 
 #add_bill,
 #settle_up_form {
-    fontSize: 14px;
+    font-size: 14px;
     width: 350px;
     min-height: 480px;
     margin-left: -175px;
@@ -10188,8 +10188,8 @@ body {
     padding: 10px;
     border-bottom: 1px solid #36977b;
     text-shadow: 0 -1px 0 #318a71;
-    fontSize: 18px;
-    fontWeight: bold
+    font-size: 18px;
+    font-weight: bold
 }
 
 #add_bill .main-window header a.dismiss,
@@ -10197,8 +10197,8 @@ body {
 #settle_up_form .main-window header a.dismiss,
 #settle_up_form .subview header a.dismiss {
     float: right;
-    fontSize: 28px;
-    marginTop: -3px;
+    font-size: 28px;
+    margin-top: -3px;
     color: #fff;
     text-decoration: none
 }
@@ -10268,7 +10268,7 @@ body {
     height: 0px;
     max-height: 0px;
     padding: 0 10px;
-    marginBottom: -1px
+    margin-bottom: -1px
 }
 
 #add_bill .main-window .body .overlay,
@@ -10333,7 +10333,7 @@ body {
 #settle_up_form .main-window .body .main_fields div.cost_container span.currency_code,
 #settle_up_form .subview .body .main_fields div.cost_container span.currency_code {
     cursor: pointer;
-    fontSize: 20px;
+    font-size: 20px;
     color: #333;
     display: inline-block;
     padding: 15px 3px 7px;
@@ -10369,11 +10369,11 @@ body {
 #add_bill .subview .body .main_fields input.description,
 #settle_up_form .main-window .body .main_fields input.description,
 #settle_up_form .subview .body .main_fields input.description {
-    fontSize: 20px;
+    font-size: 20px;
     height: 24px;
-    lineHeight: 24px;
-    marginTop: 1px;
-    marginBottom: 3px;
+    line-height: 24px;
+    margin-top: 1px;
+    margin-bottom: 3px;
     padding-left: 3px;
     padding-right: 3px;
     border-bottom: 1px dashed #ccc !important
@@ -10383,13 +10383,13 @@ body {
 #add_bill .subview .body .main_fields input.cost,
 #settle_up_form .main-window .body .main_fields input.cost,
 #settle_up_form .subview .body .main_fields input.cost {
-    fontSize: 36px;
-    fontWeight: bold;
+    font-size: 36px;
+    font-weight: bold;
     height: 40px;
-    lineHeight: 40px;
+    line-height: 40px;
     width: 120px;
     padding-bottom: 0;
-    marginBottom: 0;
+    margin-bottom: 0;
     vertical-align: bottom
 }
 
@@ -10410,7 +10410,7 @@ body {
 #settle_up_form .subview .body .human_summary {
     clear: both;
     margin: 15px 0 10px;
-    fontSize: 14px
+    font-size: 14px
 }
 
 #add_bill .main-window .body .human_summary a,
@@ -10423,13 +10423,13 @@ body {
     -moz-border-radius: 10px;
     border-radius: 10px;
     height: 18px;
-    lineHeight: 16px;
+    line-height: 16px;
     padding: 2px 5px 0;
     border: 1px dashed #ccc;
     vertical-align: middle;
     color: #5cc5a7;
     margin: 0px;
-    fontSize: inherit;
+    font-size: inherit;
     cursor: pointer;
     text-decoration: none;
     overflow: hidden;
@@ -10462,7 +10462,7 @@ body {
 #settle_up_form .main-window .body .human_summary .details,
 #settle_up_form .subview .body .human_summary .details {
     margin: 3px 0;
-    fontSize: 14px
+    font-size: 14px
 }
 
 #add_bill .main-window .body .slim-button,
@@ -10475,13 +10475,13 @@ body {
     -moz-border-radius: 12px;
     border-radius: 12px;
     height: 24px;
-    lineHeight: 24px;
+    line-height: 24px;
     width: 140px;
     padding: 0 5px;
     border: 1px solid #ccc;
     color: #666;
     margin: 5px;
-    fontSize: 13px;
+    font-size: 13px;
     cursor: pointer;
     text-decoration: none;
     overflow: hidden;
@@ -10549,7 +10549,7 @@ body {
 #settle_up_form .main-window footer a,
 #settle_up_form .subview footer a {
     letter-spacing: 0;
-    fontSize: 14px
+    font-size: 14px
 }
 
 #add_bill .main-window footer button,
@@ -10619,7 +10619,7 @@ body {
 #settle_up_form #choose_category .body>ul>li {
     display: block;
     padding: 14px 10px 15px;
-    fontSize: 14px;
+    font-size: 14px;
     border-right: 1px solid #bbb
 }
 
@@ -10645,14 +10645,14 @@ body {
     width: 155px;
     padding: 8px 10px 9px;
     background: #eee;
-    fontWeight: normal
+    font-weight: normal
 }
 
 #add_bill #choose_category .body>ul>li>ul>li.selected,
 #settle_up_form #choose_category .body>ul>li>ul>li.selected {
     background: #ddd;
     border-bottom: 1px solid #ccc;
-    fontWeight: bold
+    font-weight: bold
 }
 
 #add_bill #choose_category .body>ul>li>ul>li:hover,
@@ -10690,7 +10690,7 @@ body {
 
 #add_bill #choose_category .body>ul>li.selected,
 #settle_up_form #choose_category .body>ul>li.selected {
-    fontWeight: bold
+    font-weight: bold
 }
 
 #add_bill #choose_currency,
@@ -10729,7 +10729,7 @@ body {
 #add_bill #choose_group ul li.selected,
 #settle_up_form #choose_currency ul li.selected,
 #settle_up_form #choose_group ul li.selected {
-    fontWeight: bold;
+    font-weight: bold;
     background: #eee;
     border-bottom: 1px solid #ddd
 }
@@ -10823,7 +10823,7 @@ body {
 #settle_up_form #add_notes div.memo input[type=file] {
     margin: 5px 0;
     height: auto;
-    lineHeight: 1em;
+    line-height: 1em;
     width: auto
 }
 
@@ -10870,7 +10870,7 @@ body {
     -moz-border-radius: 12px;
     border-radius: 12px;
     margin-right: 2px;
-    marginTop: -2px
+    margin-top: -2px
 }
 
 #add_bill #choose_payer .body>ul>li:hover,
@@ -10881,14 +10881,14 @@ body {
 #add_bill #choose_payer .body>ul>li.selected,
 #settle_up_form #choose_payer .body>ul>li.selected {
     background: #eee;
-    fontWeight: bold
+    font-weight: bold
 }
 
 #add_bill #choose_payer .body>ul>li ul,
 #settle_up_form #choose_payer .body>ul>li ul {
     border-top: 1px solid #ddd;
     cursor: auto;
-    fontWeight: normal;
+    font-weight: normal;
     list-style: none;
     margin: 10px 0 0;
     padding: 0
@@ -10903,7 +10903,7 @@ body {
 
 #add_bill #choose_payer .body>ul>li ul li:first-child,
 #settle_up_form #choose_payer .body>ul>li ul li:first-child {
-    fontSize: 12px;
+    font-size: 12px;
     color: #999
 }
 
@@ -10937,7 +10937,7 @@ body {
 
 #add_bill #choose_split.active.itemized_form.subview .btn-mint.dismiss,
 #settle_up_form #choose_split.active.itemized_form.subview .btn-mint.dismiss {
-    marginTop: 10px
+    margin-top: 10px
 }
 
 #add_bill #choose_split.active.itemized_form.subview .iou_buttons,
@@ -10964,15 +10964,15 @@ body {
 
 #add_bill #choose_split .split-details #split_method .split_button,
 #settle_up_form #choose_split .split-details #split_method .split_button {
-    fontSize: 24px;
-    lineHeight: 24px;
+    font-size: 24px;
+    line-height: 24px;
     padding: 0 8px 4px;
     height: 30px
 }
 
 #add_bill #choose_split .split-details #split_method .split_button.unequal,
 #settle_up_form #choose_split .split-details #split_method .split_button.unequal {
-    fontSize: 16px;
+    font-size: 16px;
     padding-top: 2px
 }
 
@@ -10981,12 +10981,12 @@ body {
 #settle_up_form #choose_split .split-details #split_method .split_button.percent,
 #settle_up_form #choose_split .split-details #split_method .split_button.adjustment {
     padding-top: 2px;
-    fontSize: 20px
+    font-size: 20px
 }
 
 #add_bill #choose_split .split-details #split_method .split_button i,
 #settle_up_form #choose_split .split-details #split_method .split_button i {
-    fontSize: 20px;
+    font-size: 20px;
     padding-top: 1px
 }
 
@@ -10997,7 +10997,7 @@ body {
 
 #add_bill #choose_split .split-details .split_method h3,
 #settle_up_form #choose_split .split-details .split_method h3 {
-    marginBottom: 5px
+    margin-bottom: 5px
 }
 
 #add_bill #choose_split .split-details .split_method.equal,
@@ -11067,7 +11067,7 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
     vertical-align: middle;
-    lineHeight: 16px;
+    line-height: 16px;
     min-height: 18px
 }
 
@@ -11075,20 +11075,20 @@ body {
 #settle_up_form #choose_split .split-details .split_method .person .subsummary {
     display: inline-block;
     color: #999;
-    fontSize: 11px
+    font-size: 11px
 }
 
 #add_bill #choose_split .split-details .split_method .person input[type=checkbox],
 #settle_up_form #choose_split .split-details .split_method .person input[type=checkbox] {
     height: 20px;
     width: 20px;
-    fontSize: 20px
+    font-size: 20px
 }
 
 #add_bill #choose_split .split-details .split_method .person .amount,
 #settle_up_form #choose_split .split-details .split_method .person .amount {
     float: right;
-    marginTop: 8px
+    margin-top: 8px
 }
 
 #add_bill #choose_split .split-details .split_method .person div.input-prepend,
@@ -11096,8 +11096,8 @@ body {
 #settle_up_form #choose_split .split-details .split_method .person div.input-prepend,
 #settle_up_form #choose_split .split-details .split_method .person div.input-append {
     float: right;
-    marginTop: 4px;
-    marginBottom: 2px
+    margin-top: 4px;
+    margin-bottom: 2px
 }
 
 #add_bill #choose_split .split-details .split_method .person div.input-prepend input,
@@ -11120,8 +11120,8 @@ body {
 #settle_up_form #choose_split .split-details .split_method.percent .totals {
     padding: 5px;
     text-align: left;
-    fontSize: 16px;
-    marginTop: 7px
+    font-size: 16px;
+    margin-top: 7px
 }
 
 #add_bill #choose_split .split-details .split_method.unequal .totals .subtotals,
@@ -11129,7 +11129,7 @@ body {
 #settle_up_form #choose_split .split-details .split_method.unequal .totals .subtotals,
 #settle_up_form #choose_split .split-details .split_method.percent .totals .subtotals {
     float: right;
-    marginTop: -7px;
+    margin-top: -7px;
     text-align: right
 }
 
@@ -11137,15 +11137,15 @@ body {
 #add_bill #choose_split .split-details .split_method.percent .totals .subtotals .owed_total,
 #settle_up_form #choose_split .split-details .split_method.unequal .totals .subtotals .owed_total,
 #settle_up_form #choose_split .split-details .split_method.percent .totals .subtotals .owed_total {
-    fontWeight: bold;
-    fontSize: 16px
+    font-weight: bold;
+    font-size: 16px
 }
 
 #add_bill #choose_split .split-details .split_method.unequal .totals .subtotals .remaining,
 #add_bill #choose_split .split-details .split_method.percent .totals .subtotals .remaining,
 #settle_up_form #choose_split .split-details .split_method.unequal .totals .subtotals .remaining,
 #settle_up_form #choose_split .split-details .split_method.percent .totals .subtotals .remaining {
-    fontSize: 12px;
+    font-size: 12px;
     color: #aaa
 }
 
@@ -11156,11 +11156,11 @@ body {
 #settle_up_form .main-window .body .overlay .prompt {
     margin: 16px 0 8px;
     color: #666;
-    fontSize: 16px
+    font-size: 16px
 }
 
 #settle_up_form .main-window .body .overlay .btn-payment {
-    lineHeight: 30px;
+    line-height: 30px;
     margin: 6px auto;
     padding: 3px 0;
     background-image: none;
@@ -11186,7 +11186,7 @@ body {
 #settle_up_form .main-window .body .overlay button,
 #settle_up_form .main-window .body .overlay a.drone {
     width: 290px;
-    fontSize: 16px;
+    font-size: 16px;
     margin: 8px 0;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -11198,22 +11198,22 @@ body {
     bottom: 10px;
     left: 10px;
     right: 10px;
-    fontSize: 11px;
+    font-size: 11px;
     color: #aaa;
-    lineHeight: 14px
+    line-height: 14px
 }
 
 #settle_up_form .main-window .body .main_fields {
     text-align: center;
-    fontSize: 16px;
-    marginBottom: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
     width: auto
 }
 
 #settle_up_form .main-window .body .main_fields div.images {
-    marginBottom: 15px
+    margin-bottom: 15px
 }
 
 #settle_up_form .main-window .body .main_fields div.images img.avatar {
@@ -11234,7 +11234,7 @@ body {
 }
 
 #settle_up_form .main-window .body .main_fields div.cost_container {
-    marginBottom: 5px;
+    margin-bottom: 5px;
     width: auto
 }
 
@@ -11244,8 +11244,8 @@ body {
 }
 
 #settle_up_form .main-window .body .human_summary {
-    marginBottom: 2px;
-    fontSize: 16px
+    margin-bottom: 2px;
+    font-size: 16px
 }
 
 #settle_up_form .submit {
@@ -11257,8 +11257,8 @@ body {
 }
 
 #invite_friends h3 {
-    fontSize: 24px;
-    marginBottom: 20px
+    font-size: 24px;
+    margin-bottom: 20px
 }
 
 #invite_friends h3 img {
@@ -11274,7 +11274,7 @@ body {
 }
 
 #invite_friends div.padding_wrapper div.field_label {
-    marginTop: 15px
+    margin-top: 15px
 }
 
 #invite_friends div.padding_wrapper div.to {
@@ -11289,10 +11289,10 @@ body {
 
 #invite_friends div.padding_wrapper div.to div.to_label {
     display: inline-block;
-    fontSize: 14px;
-    fontWeight: bold;
+    font-size: 14px;
+    font-weight: bold;
     vertical-align: top;
-    marginTop: 10px;
+    margin-top: 10px;
     margin-right: -5px
 }
 
@@ -11321,7 +11321,7 @@ body {
     border-radius: 5px;
     width: 492px;
     min-height: 54px;
-    fontSize: 14px;
+    font-size: 14px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none
@@ -11333,21 +11333,21 @@ body {
 
 #invite_friends div.padding_wrapper a.see_invite {
     display: inline-block;
-    marginTop: 6px
+    margin-top: 6px
 }
 
 #invite_friends div.padding_wrapper button.close {
     position: absolute;
     top: 25px;
     right: 25px;
-    fontSize: 28px;
-    fontWeight: bold
+    font-size: 28px;
+    font-weight: bold
 }
 
 #invite_friends div.padding_wrapper .submit {
     display: inline-block;
     width: auto;
-    fontSize: 18px;
+    font-size: 18px;
     float: right
 }
 
@@ -11357,7 +11357,7 @@ body {
     left: 0;
     right: 0;
     padding: 20px;
-    marginTop: 20px;
+    margin-top: 20px;
     background: rgba(255, 255, 255, 0.8);
     opacity: 0;
     -webkit-transition: opacity 0.3s linear;
@@ -11401,14 +11401,14 @@ body {
 }
 
 #first_launch div.big_buttons {
-    fontSize: 14px
+    font-size: 14px
 }
 
 #first_launch div.big_buttons .main_buttons a.btn,
 #first_launch div.big_buttons .keep_track_of_ious a.btn {
     display: block;
     width: 270px;
-    fontSize: 24px;
+    font-size: 24px;
     margin: 0 auto 16px;
     text-align: left
 }
@@ -11418,12 +11418,12 @@ body {
     margin-right: 10px;
     width: 34px;
     height: 34px;
-    fontSize: 34px;
+    font-size: 34px;
     text-align: center
 }
 
 #first_launch h1 {
-    fontSize: 40px
+    font-size: 40px
 }
 
 #first_launch h1 img {
@@ -11434,8 +11434,8 @@ body {
 }
 
 #first_launch .invite_header {
-    fontSize: 14px;
-    marginBottom: 3px
+    font-size: 14px;
+    margin-bottom: 3px
 }
 
 #first_launch .invite_header span {
@@ -11453,7 +11453,7 @@ body {
 }
 
 #first_launch .invite {
-    marginBottom: 10px
+    margin-bottom: 10px
 }
 
 #first_launch .invite img {
@@ -11466,11 +11466,11 @@ body {
 }
 
 #first_launch .invite input {
-    fontSize: 16px;
+    font-size: 16px;
     height: 16px;
     padding: 8px 5px;
     vertical-align: middle;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 #first_launch .invite input.name {
@@ -11488,8 +11488,8 @@ body {
     vertical-align: middle;
     color: #c00;
     text-decoration: none;
-    fontSize: 24px;
-    fontWeight: bold;
+    font-size: 24px;
+    font-weight: bold;
     cursor: pointer
 }
 
@@ -11499,7 +11499,7 @@ body {
 
 #sharing_prompt,
 #share_to_remove_ads {
-    fontSize: 16px
+    font-size: 16px
 }
 
 #sharing_prompt .modal-body,
@@ -11531,20 +11531,20 @@ body {
 #sharing_prompt .rating,
 #share_to_remove_ads .rating {
     margin: 50px 0 0px;
-    fontSize: 60px;
+    font-size: 60px;
     color: #ccc;
     cursor: pointer
 }
 
 #sharing_prompt p,
 #share_to_remove_ads p {
-    lineHeight: 22px
+    line-height: 22px
 }
 
 #sharing_prompt p.rating_description,
 #share_to_remove_ads p.rating_description {
     height: 16px;
-    fontSize: 16px;
+    font-size: 16px;
     margin: 20px 0 0;
     color: #999;
     text-align: left
@@ -11561,9 +11561,9 @@ body {
 #share_to_remove_ads .social a.btn {
     color: #fff;
     text-shadow: none;
-    fontSize: 18px;
+    font-size: 18px;
     padding: 5px 10px 3px 3px;
-    marginBottom: 10px;
+    margin-bottom: 10px;
     opacity: 0.9
 }
 
@@ -11587,16 +11587,16 @@ body {
     width: 34px;
     height: 34px;
     margin-right: 0px;
-    marginTop: -2px
+    margin-top: -2px
 }
 
 #subscribe-to-pro {
-    fontSize: 16px;
-    lineHeight: 24px;
+    font-size: 16px;
+    line-height: 24px;
     width: 560px;
     margin-left: -280px;
     max-height: 502px;
-    marginTop: -250px;
+    margin-top: -250px;
     overflow: visible
 }
 
@@ -11650,13 +11650,13 @@ body {
 #subscribe-to-pro h4 {
     text-Transform: uppercase;
     color: #999;
-    fontSize: 14px;
-    marginBottom: 10px
+    font-size: 14px;
+    margin-bottom: 10px
 }
 
 #subscribe-to-pro strong.price {
     color: #3eaf8f;
-    fontSize: 18px
+    font-size: 18px
 }
 
 #subscribe-to-pro ul {
@@ -11664,17 +11664,17 @@ body {
     width: 205px;
     overflow: visible;
     white-space: nowrap;
-    fontSize: 14px;
+    font-size: 14px;
     text-align: left
 }
 
 #subscribe-to-pro li {
-    lineHeight: 20px;
+    line-height: 20px;
     list-style: none
 }
 
 #subscribe-to-pro li i.icon {
-    fontSize: 20px;
+    font-size: 20px;
     vertical-align: -2px
 }
 
@@ -11689,13 +11689,13 @@ body {
     border: 1px solid #94d9c5;
     padding: 4px;
     margin: -3px 5px 7px;
-    fontSize: 14px;
-    lineHeight: 20px
+    font-size: 14px;
+    line-height: 20px
 }
 
 #subscribe-to-pro .avg_cost .amount {
-    fontSize: 16px;
-    fontWeight: bold;
+    font-size: 16px;
+    font-weight: bold;
     color: #3eaf8f
 }
 
@@ -11710,7 +11710,7 @@ body {
     text-align: left;
     display: block;
     margin: 0 auto;
-    fontSize: 16px;
+    font-size: 16px;
     padding: 3px 0;
     overflow: visible;
     white-space: nowrap;
@@ -11723,25 +11723,25 @@ body {
 }
 
 #subscribe-to-pro .well label .per-month {
-    fontSize: 12px
+    font-size: 12px
 }
 
 #subscribe-to-pro span.input-prepend {
-    fontSize: 24px;
-    lineHeight: 36px;
-    marginBottom: 0px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0px;
     display: inline-block
 }
 
 #subscribe-to-pro span.input-prepend .add-on {
     height: 30px;
-    lineHeight: 30px
+    line-height: 30px
 }
 
 #subscribe-to-pro span.input-prepend input[type=text] {
     height: 30px;
-    lineHeight: 30px;
-    fontSize: 24px;
+    line-height: 30px;
+    font-size: 24px;
     font-family: inherit;
     width: 48px;
     margin-right: 1px
@@ -11753,22 +11753,22 @@ body {
     background: #c45;
     color: #fff;
     padding: 5px;
-    fontSize: 13px;
-    lineHeight: 16px;
+    font-size: 13px;
+    line-height: 16px;
     margin: 15px 0 -5px
 }
 
 #subscribe-to-pro form {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 #subscribe-to-pro input.btn {
-    fontSize: 18px;
-    marginBottom: 5px
+    font-size: 18px;
+    margin-bottom: 5px
 }
 
 #subscribe-to-pro a.no-thanks {
-    fontSize: 14px
+    font-size: 14px
 }
 
 #subscribe-to-pro td.big-image {
@@ -11784,7 +11784,7 @@ body {
     height: 600px;
     width: 400px;
     margin-left: -202px;
-    marginTop: -300px;
+    margin-top: -300px;
     overflow: visible
 }
 
@@ -11806,12 +11806,12 @@ body {
     top: 50%;
     right: 50%;
     margin-right: -214px;
-    marginTop: -314px;
+    margin-top: -314px;
     background: #c00;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    fontSize: 24px
+    font-size: 24px
 }
 
 body>div.custom_prompt {
@@ -11839,7 +11839,7 @@ body>div.custom_prompt .prompt_body {
     position: relative;
     width: 300px;
     margin: 0 auto;
-    marginTop: 100px;
+    margin-top: 100px;
     background: #fff;
     border: 1px solid #999;
     padding: 15px;
@@ -11855,8 +11855,8 @@ body>div.custom_prompt .prompt_body {
 body>div.custom_prompt .prompt_body .error_message {
     display: none;
     color: #c00;
-    fontWeight: bold;
-    fontSize: 13px;
+    font-weight: bold;
+    font-size: 13px;
     margin: -5px 0 15px
 }
 
@@ -11867,14 +11867,14 @@ body>div.custom_prompt .prompt_body div.buttons {
 body>div.custom_prompt .prompt_body div.buttons .btn {
     width: 100px;
     margin-left: 10px;
-    fontSize: 18px
+    font-size: 18px
 }
 
 body>div.custom_prompt .prompt_body input {
     padding: 5px;
-    fontSize: 16px;
+    font-size: 16px;
     height: 18px;
-    lineHeight: 18px;
+    line-height: 18px;
     width: 288px;
     margin: 10px 0
 }
@@ -11892,19 +11892,19 @@ body>div.custom_prompt .prompt_body input {
 
 #group_member_details h4 {
     clear: both;
-    fontSize: 16px;
+    font-size: 16px;
     text-Transform: uppercase;
     color: #999;
-    marginBottom: 5px
+    margin-bottom: 5px
 }
 
 #group_member_details .repayments {
-    fontSize: 14px
+    font-size: 14px
 }
 
 #group_member_details .repayments div {
     padding: 5px;
-    lineHeight: 28px
+    line-height: 28px
 }
 
 #group_member_details .repayments div:hover {
@@ -11943,8 +11943,8 @@ body>div.custom_prompt .prompt_body input {
 
 #ajax_statuses>div p {
     color: #666;
-    fontSize: 12px;
-    lineHeight: 12px
+    font-size: 12px;
+    line-height: 12px
 }
 
 #ajax_statuses>div img {
@@ -11973,7 +11973,7 @@ body>div.custom_prompt .prompt_body input {
     float: right;
     position: relative;
     top: auto;
-    marginTop: -30px
+    margin-top: -30px
 }
 
 .btn-group .hide-caret span.caret {
@@ -12007,7 +12007,7 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #itemized_items input {
-    marginBottom: 0px
+    margin-bottom: 0px
 }
 
 #itemized_items th {
@@ -12017,7 +12017,7 @@ body>div.custom_prompt .prompt_body input {
 
 #itemized_items .itemized_item_selector {
     border: 1px solid #666;
-    fontSize: 11px;
+    font-size: 11px;
     text-align: center;
     padding: 1px;
     cursor: pointer
@@ -12028,11 +12028,11 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #itemized_items .small {
-    fontSize: 11px
+    font-size: 11px
 }
 
 #itemized_items .small.very {
-    fontSize: 10px
+    font-size: 10px
 }
 
 #itemized_items .cost {
@@ -12060,7 +12060,7 @@ body>div.custom_prompt .prompt_body input {
 
 #itemized_items tr#itemized_total td,
 #itemized_items tr#itemized_grand_total td {
-    fontWeight: bold
+    font-weight: bold
 }
 
 #itemized_items .amount_column {
@@ -12078,7 +12078,7 @@ body>div.custom_prompt .prompt_body input {
 #itemized_items .initials {
     cursor: pointer;
     text-align: center;
-    lineHeight: 14px
+    line-height: 14px
 }
 
 #itemized_items .tax_percent,
@@ -12093,7 +12093,7 @@ body>div.custom_prompt .prompt_body input {
     width: 30px;
     padding: 2px;
     margin-right: 2px;
-    fontSize: 11px;
+    font-size: 11px;
     text-align: center
 }
 
@@ -12183,7 +12183,7 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #fat_rabbit {
-    fontSize: 14px
+    font-size: 14px
 }
 
 #fat_rabbit .flex_container {
@@ -12248,7 +12248,7 @@ body>div.custom_prompt .prompt_body input {
 #fat_rabbit .header .btn {
     vertical-align: baseline;
     margin-left: 5px;
-    fontSize: 14px
+    font-size: 14px
 }
 
 #fat_rabbit .header .btn-mint {
@@ -12280,8 +12280,8 @@ body>div.custom_prompt .prompt_body input {
 #fat_rabbit .header #login-form input[type=text],
 #fat_rabbit .header #login-form input[type=email],
 #fat_rabbit .header #login-form input[type=password] {
-    fontSize: 14px;
-    marginBottom: 8px;
+    font-size: 14px;
+    margin-bottom: 8px;
     text-align: left;
     width: 230px
 }
@@ -12290,7 +12290,7 @@ body>div.custom_prompt .prompt_body input {
     display: block;
     margin-left: 0;
     width: 100%;
-    marginBottom: 10px
+    margin-bottom: 10px
 }
 
 #fat_rabbit .header #login-form form {
@@ -12323,7 +12323,7 @@ body>div.custom_prompt .prompt_body input {
     z-index: 1;
     background: #666;
     color: #fff;
-    fontSize: 14px;
+    font-size: 14px;
     text-shadow: 0 -1px 0 #000
 }
 
@@ -12333,8 +12333,8 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit .footer a {
     color: #fff;
-    fontWeight: bold;
-    fontSize: 14px;
+    font-weight: bold;
+    font-size: 14px;
     margin: 0 5px;
     border-bottom: 1px dashed #999
 }
@@ -12354,13 +12354,13 @@ body>div.custom_prompt .prompt_body input {
     float: left;
     width: 420px;
     margin-right: 20px;
-    fontSize: 16px
+    font-size: 16px
 }
 
 #fat_rabbit .footer .about_us .made-with-smiles {
-    fontSize: 24px;
-    marginTop: 0;
-    lineHeight: 30px
+    font-size: 24px;
+    margin-top: 0;
+    line-height: 30px
 }
 
 #fat_rabbit .footer .about_us #copyright {
@@ -12409,14 +12409,14 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #fat_rabbit .masthead h1 {
-    fontSize: 68px;
-    marginBottom: 10px;
+    font-size: 68px;
+    margin-bottom: 10px;
     white-space: nowrap
 }
 
 @media (max-width: 959px) {
     #fat_rabbit .masthead h1 {
-        fontSize: 40px;
+        font-size: 40px;
         white-space: normal
     }
 }
@@ -12502,12 +12502,12 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #fat_rabbit .masthead .longer_tagline {
-    fontSize: 21px;
-    marginTop: 20px;
-    marginBottom: 5px;
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    lineHeight: 26px
+    line-height: 26px
 }
 
 @media (max-width: 959px) {
@@ -12518,7 +12518,7 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit .masthead .longer_tagline.custom {
     margin: 15px 0 20px;
-    lineHeight: 32px
+    line-height: 32px
 }
 
 #fat_rabbit .masthead .longer_tagline.custom div.image_container {
@@ -12554,17 +12554,17 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit .masthead #sign_up {
     width: 260px;
-    fontSize: 28px;
+    font-size: 28px;
     text-align: center;
     padding: 12px 20px;
     z-index: 1;
     position: relative;
-    marginTop: 3px;
-    marginBottom: 10px
+    margin-top: 3px;
+    margin-bottom: 10px
 }
 
 #fat_rabbit .masthead #sign_up div {
-    fontSize: 14px
+    font-size: 14px
 }
 
 #fat_rabbit .masthead #homepage_signup_form {
@@ -12573,8 +12573,8 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit .masthead #homepage_signup_form input[type=email],
 #fat_rabbit .masthead #homepage_signup_form input[type=password] {
-    fontSize: 20px;
-    lineHeight: 30px;
+    font-size: 20px;
+    line-height: 30px;
     height: 30px;
     padding: 4px 7px;
     width: 180px;
@@ -12582,12 +12582,12 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #fat_rabbit .masthead #homepage_signup_form input[type=submit] {
-    fontSize: 20px;
+    font-size: 20px;
     margin: 5px
 }
 
 #fat_rabbit .more_information {
-    marginTop: 3px;
+    margin-top: 3px;
     padding: 20px;
     position: relative;
     z-index: 1;
@@ -12601,8 +12601,8 @@ body>div.custom_prompt .prompt_body input {
     margin: 20px auto;
     min-height: 325px;
     padding-left: 170px;
-    fontSize: 18px;
-    lineHeight: 24px
+    font-size: 18px;
+    line-height: 24px
 }
 
 @media (max-width: 959px) {
@@ -12617,14 +12617,14 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit #sign_up_two {
     width: 250px;
-    fontSize: 24px;
+    font-size: 24px;
     text-align: center;
     padding: 15px 20px;
     z-index: 1;
     position: absolute;
     top: 0;
     right: 0;
-    marginBottom: 9px
+    margin-bottom: 9px
 }
 
 @media (max-width: 990px) {
@@ -12634,7 +12634,7 @@ body>div.custom_prompt .prompt_body input {
         top: auto;
         right: auto;
         width: auto;
-        marginTop: 10px
+        margin-top: 10px
     }
 }
 
@@ -12654,23 +12654,23 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit #error_messages li,
 #fat_rabbit #duplicates_not_allowed li {
-    lineHeight: 22px
+    line-height: 22px
 }
 
 #fat_rabbit #duplicates_not_allowed {
     display: none;
-    fontSize: 16px;
-    lineHeight: 20px;
+    font-size: 16px;
+    line-height: 20px;
     padding: 10px 10px;
     white-space: nowrap
 }
 
 #fat_rabbit .flex_container.blank_page {
-    lineHeight: 36px;
-    fontSize: 18px;
+    line-height: 36px;
+    font-size: 18px;
     width: auto;
     max-width: 600px;
-    marginTop: 50px;
+    margin-top: 50px;
     padding-bottom: 50px
 }
 
@@ -12682,18 +12682,18 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit .flex_container.blank_page h2 {
     text-Transform: uppercase;
-    fontSize: 16px;
+    font-size: 16px;
     color: #999;
-    fontWeight: bold;
-    lineHeight: 20px
+    font-weight: bold;
+    line-height: 20px
 }
 
 #fat_rabbit .flex_container.blank_page select {
-    fontSize: 18px;
+    font-size: 18px;
     min-height: 30px;
     height: 30px;
-    lineHeight: 30px;
-    marginBottom: 17px;
+    line-height: 30px;
+    margin-bottom: 17px;
     vertical-align: baseline
 }
 
@@ -12710,16 +12710,16 @@ body>div.custom_prompt .prompt_body input {
 #fat_rabbit .flex_container.blank_page input[type=password] {
     color: #333;
     width: 95%;
-    fontSize: 20px;
+    font-size: 20px;
     width: 95%;
     height: 28px;
-    lineHeight: 110%;
-    marginBottom: 17px
+    line-height: 110%;
+    margin-bottom: 17px
 }
 
 #fat_rabbit .flex_container.blank_page .tos_acceptance {
-    lineHeight: 18px;
-    fontSize: 14px;
+    line-height: 18px;
+    font-size: 14px;
     margin: 20px 0 10px
 }
 
@@ -12739,19 +12739,19 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #fat_rabbit .flex_container.blank_page #error_messages span.error {
-    fontWeight: bold
+    font-weight: bold
 }
 
 #fat_rabbit .flex_container.blank_page .optional_text {
     color: #ccc;
-    fontSize: 14px
+    font-size: 14px
 }
 
 #fat_rabbit .flex_container.blank_page .btn-large {
     display: inline-block;
     width: auto;
-    fontSize: 24px;
-    marginTop: 9px
+    font-size: 24px;
+    margin-top: 9px
 }
 
 #fat_rabbit .flex_container.blank_page .choose-yourself a,
@@ -12761,10 +12761,10 @@ body>div.custom_prompt .prompt_body input {
     width: 90%;
     padding: 8px;
     text-align: left;
-    fontSize: 16px;
+    font-size: 16px;
     margin: 8px 0;
     height: 25px;
-    lineHeight: 25px;
+    line-height: 25px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap
@@ -12793,9 +12793,9 @@ body>div.custom_prompt .prompt_body input {
 #fat_rabbit .flex_container.blank_page .group-member {
     position: relative;
     display: block;
-    fontSize: 14px;
-    lineHeight: 18px;
-    marginTop: 10px
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px
 }
 
 #fat_rabbit .flex_container.blank_page .group-member img {
@@ -12813,10 +12813,10 @@ body>div.custom_prompt .prompt_body input {
 #fat_rabbit .flex_container.blank_page .group-member input[type=text],
 #fat_rabbit .flex_container.blank_page .group-member input[type=email] {
     vertical-align: middle;
-    fontSize: 14px;
+    font-size: 14px;
     height: 19px;
     width: 47%;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 #fat_rabbit .flex_container.blank_page .group-member input.name[type=text],
@@ -12829,8 +12829,8 @@ body>div.custom_prompt .prompt_body input {
     position: absolute;
     top: 4px;
     right: 5px;
-    fontSize: 20px;
-    fontWeight: bold;
+    font-size: 20px;
+    font-weight: bold;
     color: #c00
 }
 
@@ -12840,7 +12840,7 @@ body>div.custom_prompt .prompt_body input {
 
 @media (max-width: 750px) {
     #fat_rabbit .flex_container.blank_page {
-        marginTop: 0px
+        margin-top: 0px
     }
 
     #fat_rabbit .flex_container.blank_page img.envelope {
@@ -12849,14 +12849,14 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #fat_rabbit input[type=file] {
-    lineHeight: 100%
+    line-height: 100%
 }
 
 #fat_rabbit h4 {
     text-Transform: uppercase;
     color: #999;
-    fontSize: 14px;
-    marginBottom: 10px
+    font-size: 14px;
+    margin-bottom: 10px
 }
 
 #fat_rabbit #account-settings input {
@@ -12873,9 +12873,9 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit .notification-settings li {
     list-style: none;
-    fontSize: 13px;
+    font-size: 13px;
     margin-right: 35px;
-    marginBottom: 10px
+    margin-bottom: 10px
 }
 
 #fat_rabbit .notification-settings li span {
@@ -12886,7 +12886,7 @@ body>div.custom_prompt .prompt_body input {
 #fat_rabbit .notification-settings li label {
     display: inline-block;
     float: right;
-    marginBottom: 0;
+    margin-bottom: 0;
     margin-right: 3px;
     cursor: pointer
 }
@@ -12913,50 +12913,50 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit .notification-settings h5 {
     color: #999;
-    fontSize: 11px;
+    font-size: 11px;
     text-Transform: uppercase;
     margin: 15px 0 5px
 }
 
 #fat_rabbit .notification-settings h5:first-child {
-    marginTop: 0
+    margin-top: 0
 }
 
 #fat_rabbit .advanced-features .btn {
-    marginBottom: 10px
+    margin-bottom: 10px
 }
 
 #fat_rabbit #search-page .search-bar {
     display: inline-block;
-    marginBottom: 10px;
+    margin-bottom: 10px;
     padding: 12px 12px
 }
 
 #fat_rabbit #search-page .search-bar input {
-    marginBottom: 0;
+    margin-bottom: 0;
     vertical-align: middle
 }
 
 #fat_rabbit #search-page .search-bar form {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 #fat_rabbit #search-page .search-bar .advanced_link {
     display: block;
     margin: 5px 0 -5px;
-    fontSize: 12px
+    font-size: 12px
 }
 
 #fat_rabbit #search-page .search-bar div.more_options {
-    marginTop: 8px
+    margin-top: 8px
 }
 
 #fat_rabbit #search-page .search-bar div.more_options select {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 #fat_rabbit #search-page .results {
-    marginTop: 10px;
+    margin-top: 10px;
     border-top: 1px solid #ddd;
     padding-top: 10px
 }
@@ -12981,22 +12981,22 @@ body>div.custom_prompt .prompt_body input {
 
 #fat_rabbit #charts-page .filters {
     display: inline-block;
-    marginBottom: 10px;
+    margin-bottom: 10px;
     padding: 12px 12px
 }
 
 #fat_rabbit #charts-page .filters input {
-    marginBottom: 0;
+    margin-bottom: 0;
     vertical-align: middle
 }
 
 #fat_rabbit #charts-page .filters form {
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 #fat_rabbit #charts-page .filters form select {
     width: auto;
-    marginBottom: 0
+    margin-bottom: 0
 }
 
 #fat_rabbit #charts-page .charts {
@@ -13004,7 +13004,7 @@ body>div.custom_prompt .prompt_body input {
 }
 
 .tooltip {
-    fontSize: 12px;
+    font-size: 12px;
     pointer-events: none
 }
 
@@ -13017,20 +13017,20 @@ body>div.custom_prompt .prompt_body input {
 }
 
 .tooltip div.left h2 {
-    fontSize: 18px;
+    font-size: 18px;
     margin: 0 0 3px;
     padding: 0;
-    lineHeight: 22px;
+    line-height: 22px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis
 }
 
 .tooltip div.left h3 {
-    fontSize: 13px;
-    fontWeight: normal;
+    font-size: 13px;
+    font-weight: normal;
     color: #ccc;
-    lineHeight: 17px
+    line-height: 17px
 }
 
 .tooltip div.left hr {
@@ -13041,9 +13041,9 @@ body>div.custom_prompt .prompt_body input {
 }
 
 .tooltip div.left div.registration_status {
-    marginTop: 4px;
-    fontSize: 12px;
-    lineHeight: 16px;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 16px;
     color: #ccc
 }
 
@@ -13059,7 +13059,7 @@ body>div.custom_prompt .prompt_body input {
     background: #000;
     background: rgba(0, 0, 0, 0.9);
     padding: 6px 10px;
-    fontSize: 13px;
+    font-size: 13px;
     max-width: 275px
 }
 
@@ -13072,7 +13072,7 @@ body>div.custom_prompt .prompt_body input {
 
 #renters-insurance h1 {
     margin: 20px 0;
-    fontWeight: normal
+    font-weight: normal
 }
 
 #renters-insurance #big_answer {
@@ -13082,33 +13082,33 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #renters-insurance #big_yes {
-    fontSize: 144px;
+    font-size: 144px;
     display: block;
-    lineHeight: 120px;
+    line-height: 120px;
     position: absolute;
     top: 10px;
     left: 50%;
     width: 800px;
     margin-left: -400px;
-    marginTop: 20px;
+    margin-top: 20px;
     opacity: 0;
-    fontWeight: bold;
+    font-weight: bold;
     color: #d9534f
 }
 
 #renters-insurance #big_details {
     opacity: 0;
-    fontSize: 20px;
+    font-size: 20px;
     margin: 0 auto;
     max-width: 625px;
-    lineHeight: 28px
+    line-height: 28px
 }
 
 #renters-insurance .well {
-    marginTop: 20px;
-    marginBottom: 10px;
-    fontSize: 16px;
-    lineHeight: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
     padding: 15px;
     min-height: 0
 }
@@ -13116,15 +13116,15 @@ body>div.custom_prompt .prompt_body input {
 #renters-insurance .well div {
     text-align: left;
     margin: 15px 0 0;
-    fontSize: 0;
-    lineHeight: 26px;
+    font-size: 0;
+    line-height: 26px;
     color: #000
 }
 
 #renters-insurance .well span {
     display: inline-block;
     text-align: left;
-    fontSize: 16px;
+    font-size: 16px;
     vertical-align: middle
 }
 
@@ -13139,7 +13139,7 @@ body>div.custom_prompt .prompt_body input {
 #renters-insurance .well span.second {
     width: 60px;
     margin-right: 20px;
-    fontWeight: bold;
+    font-weight: bold;
     text-align: right;
     white-space: nowrap;
     overflow: hidden
@@ -13159,9 +13159,9 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #renters-insurance #below_the_fold .intro {
-    fontSize: 18px;
+    font-size: 18px;
     color: #999;
-    marginBottom: 20px
+    margin-bottom: 20px
 }
 
 #renters-insurance #below_the_fold .listing {
@@ -13181,7 +13181,7 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #renters-insurance #below_the_fold .listing h3 {
-    lineHeight: 24px
+    line-height: 24px
 }
 
 #renters-insurance #below_the_fold .listing h3 a {
@@ -13194,12 +13194,12 @@ body>div.custom_prompt .prompt_body input {
 }
 
 #renters-insurance #below_the_fold .listing .btn-orange {
-    fontSize: 18px
+    font-size: 18px
 }
 
 #renters-insurance #state_chooser {
     text-align: center;
-    fontSize: 18px
+    font-size: 18px
 }
 
 #renters-insurance #state_chooser .states {
@@ -13211,12 +13211,12 @@ body>div.custom_prompt .prompt_body input {
     display: inline-block;
     height: 30px;
     width: 30px;
-    fontSize: 16px
+    font-size: 16px
 }
 
 #renters-insurance #state_chooser .not_us {
     color: #999;
-    fontSize: 14px;
+    font-size: 14px;
     margin: 10px 0
 }
 
@@ -13224,14 +13224,14 @@ body>div.custom_prompt .prompt_body input {
     display: block;
     width: 432px;
     margin: 0 auto;
-    fontSize: 24px;
-    lineHeight: 30px;
+    font-size: 24px;
+    line-height: 30px;
     padding: 10px;
     border-radius: 8px;
     color: #000;
     background: #eee;
     min-height: 200px;
-    marginBottom: 20px
+    margin-bottom: 20px
 }
 
 .calculator_primary_button img {
@@ -13249,9 +13249,9 @@ body>div.custom_prompt .prompt_body input {
 .social-buttons a.btn {
     color: #fff;
     text-shadow: none;
-    fontSize: 14px;
+    font-size: 14px;
     padding: 5px 10px 3px 3px;
-    marginBottom: 10px;
+    margin-bottom: 10px;
     opacity: 0.9
 }
 
@@ -13271,7 +13271,7 @@ body>div.custom_prompt .prompt_body input {
     width: 26px;
     height: 26px;
     margin-right: 0px;
-    marginTop: -2px
+    margin-top: -2px
 }
 
 body#printable {
@@ -13280,7 +13280,7 @@ body#printable {
 
 body#printable td,
 body#printable th {
-    fontSize: 14px
+    font-size: 14px
 }
 
 body#printable tr:hover,
@@ -13301,7 +13301,7 @@ body#printable .settled {
 }
 
 body#printable .net_balance {
-    fontWeight: bold
+    font-weight: bold
 }
 
 body#printable tr.gray {
@@ -13310,14 +13310,14 @@ body#printable tr.gray {
 
 body#printable tr.gray td,
 body#printable tr.gray th {
-    fontWeight: bold;
+    font-weight: bold;
     background: #eee;
     border-color: #ddd;
     vertical-align: middle
 }
 
 body#printable table {
-    marginTop: 10px;
+    margin-top: 10px;
     page-break-after: always
 }
 
@@ -13355,7 +13355,7 @@ body#printable #date_control form {
 }
 
 .query-builder h1 {
-    marginBottom: 20px
+    margin-bottom: 20px
 }
 
 table tr.inactive td {
@@ -13421,8 +13421,8 @@ tbody.text-message-row.expanded .arrow {
 }
 
 
-.fontsize18px{
-    fontSize: 18px;
+.font-size18px{
+    font-size: 18px;
     
 }
 
