@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import companyLogo from '../splitwiseImages/splitwiseLogo.png'
 import userImage from '../splitwiseImages/userImage.png'
 import { Link, useNavigate } from "react-router-dom";
-
-
+import userContext from '../context/UserContext/UserContext';
+ 
 
 const Header = () => {
 
@@ -17,12 +17,14 @@ const Header = () => {
         navigate('/login');
     }
 
-    const userDetails = JSON.parse(localStorage.getItem("userDetails")); 
+    // const { setUser } = useContext(userContext)
+
+    const userDetails = JSON.parse(localStorage.getItem("userDetails"));
     let name = "User";
-    if(userDetails){
-         name = userDetails.data.user.name;
-        console.log("userDetails -> ", userDetails);
-    } 
+
+    if (userDetails) {
+        name = userDetails.data.user.name;
+    }
 
     return (
         <div>
@@ -47,12 +49,12 @@ const Header = () => {
                             <div className="navbar-inner">
                                 <div className="container">
                                     <Link className="brand" to="/dashbord">
-                                        <img id="logo" src={companyLogo} alt='companyLogo'/>
+                                        <img id="logo" src={companyLogo} alt='companyLogo' />
                                     </Link>
                                     <ul className="nav pull-right">
                                         <li className={style}>
                                             <Link to="#" className="dropdown-toggle dropdownSelect paddingTop" onClick={changeStyle}>
-                                                <img src={userImage} alt='userImg'/>
+                                                <img src={userImage} alt='userImg' />
                                                 <strong>{name}</strong>
                                                 <b className="caret"></b>
                                             </Link>

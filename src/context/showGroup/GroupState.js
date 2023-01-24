@@ -6,25 +6,25 @@ const GroupState = (props) => {
     const host = 'http://localhost:5000/api/v1/group/';
     const [groups, setGroups] = useState([]);
 
-    const fetchGroups = async() => {
+    const fetchGroups = async () => {
         const authToken = localStorage.getItem('token');
         const requestOptions = {
             method: 'GET',
             headers: {
-                'Content-Type':'application/json',
+                'Content-Type': 'application/json',
                 'authorization': `Bearer ${authToken}`
             }
         };
 
         const response = await fetch(`${host}fetchGroup`, requestOptions);
         const result = await response.json();
-        if(!result.error) {
+        if (!result.error) {
             setGroups(result.result);
         }
     };
 
-    return(
-        <GroupContext.Provider value={{groups, fetchGroups}}>
+    return (
+        <GroupContext.Provider value={{ groups, fetchGroups }}>
             {props.children}
         </GroupContext.Provider>
     )

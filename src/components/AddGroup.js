@@ -12,15 +12,12 @@ const AddGroup = (props) => {
 
     const changeStyle = (index, item) => {
         setStyle(style === "displayFlexEmailName" ? "displayFlexEmailName hideInputBox" : "displayFlexEmailName");
-        console.log(arr, "display-----------------------", item, index);
         let newArr = arr.filter((data, ind) => ind !== index)
-        console.log("newArrr---------", newArr)
         setArr(newArr);
     };
 
     const userDetails = JSON.parse(localStorage.getItem("userDetails"));
     const name = userDetails.data.user.name;
-    console.log("id of user get -> ", userDetails.data.user.id);
 
     // const getUserDetails = async (e) => {      
     //     // e.preventDefault()
@@ -52,8 +49,6 @@ const AddGroup = (props) => {
         sendData.admin = userDetails.data.user.id;
         sendData.members = arr.map(item => item.value)
 
-        console.log("arr", arr);
-        console.log("sendData-----------------------", sendData);
         e.preventDefault()
         const authToken = localStorage.getItem('token');
         const response = await fetch(`http://localhost:5000/api/v1/group/createGroup`, {
@@ -65,12 +60,13 @@ const AddGroup = (props) => {
             body: JSON.stringify(sendData)
         });
         const json = await response.json();
-        console.log("json----------------", json);
-        if (json.success) {
+        console.log('group ka result ->', json);
+        if (!json.error) {
             navigate('/dashbord');
-            props.showAlert("Group Added successfully!!", "success");
+            props.showAlert(json.message, "success");
         } else {
-            props.showAlert("Invalid Details", "danger");
+            navigate('/dashbord');
+            props.showAlert(json.error, "danger");
         }
     }
 
@@ -121,9 +117,9 @@ const AddGroup = (props) => {
 
                     <form className="form-stacked" onSubmit={handleSave}>
 
-                        <input type="hidden" name="authenticity_token"
+                        {/* <input type="hidden" name="authenticity_token"
                             value="wMTtlMqJnPdyrtVGLaETLJxEAMG5dx8opOoNTjyjT_O-ACipHqxe_54ViEpufZyD7tdnmqp1Q5NjuySEQys1bA"
-                            autoComplete="off" />
+                            autoComplete="off" /> */}
 
                         <div style={{ 'fontSize': '24px', 'lineHeight': '140%', 'margin': '16px 0 5px' }}>
                             My group shall be called…
@@ -160,6 +156,7 @@ const AddGroup = (props) => {
                                                             value={item.value}
                                                             id={i}
                                                             type={item.type}
+                                                            key={i}
                                                             size="40"
                                                         />
                                                         <a
