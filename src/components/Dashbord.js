@@ -251,6 +251,13 @@ export default Dashbord
 
 const DashbordStyle = styled.section`
  
-
+#center_column {
+    position: relative;
+    margin: 0;
+    padding-top: 33px;
+    background: #fff;
+    min-height: auto;
+    height: 75vh;
+}
 
 `;

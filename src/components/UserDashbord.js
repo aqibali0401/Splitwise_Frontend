@@ -1,42 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
+import '../Css/Dashbord.css';
 
 const UserDashbord = () => {
     return (
         <UserDashbordStyle>
 
-            <div id="center_column">
-                <div className="topbar friend">
 
-                    <img src="https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue27-100px.png" />
-                    <h1 title="coolasg971886@gmail.com">
-                        ashwani goyal
-                    </h1>
-
-                </div>
+            <div className="topbar friend">
+                <img src="https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue27-100px.png" />
+                <h1 title="coolasg971886@gmail.com">
+                    User Name
+                </h1>
             </div>
+
 
             <div id="expenses">
                 <div id="expenses_list">
                     <div className="month-divider ">
                         <span>January 2023</span>
-
                     </div>
                 </div>
             </div>
 
 
 
-            <div className="expense" id="expense-2140026156" data-date="2023-01-21T15:50:57Z">
+            <div className="expense">
                 <div className="summary">
-
-
-
-
                     <div className="expense summary payment involved" data-date="2023-01-21T15:50:57Z">
                         <div className="main-block">
                             <div className="header">
-
+                            <div class="date" title="2023-01-22T15:51:48Z">Jan <div class="number">22</div></div>
                                 <img src="https://assets.splitwise.com/assets/api/payment_icon/square/small/offline.png" />
                                 <span className="description">
                                     ashwani G. paid AQIB A. $100.00
@@ -47,15 +41,7 @@ const UserDashbord = () => {
                             you received
 
                         </div><div className="you ">
-
-
-
-
                             <span className="negative">$100.00</span>
-
-
-                        </div><div className="actions">
-                            <a href="#" className="delete" data-method="delete">×</a>
                         </div>
                     </div>
 
@@ -74,18 +60,144 @@ const UserDashbord = () => {
 export default UserDashbord;
 
 
-const UserDashbordStyle = styled.div`
-    
-    .topbar {
+const UserDashbordStyle = styled.section`    
+.topbar {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: inline-flex;
+    height: 100%;
+}
+
+/* .topbar img {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #bbb;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+    max-width: 100%;
+    vertical-align: middle;
+} */
+
+/* .topbar h1 {
+    overflow: hidden;
+    max-width: 315px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    height: 40px;
-    width: 538px;
+    font-size: 24px !important;
+    line-height: 38px;
+    height: 38px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    padding-left: 5px;
+    max-width: 270px;
+} */
+
+.expense>.summary .expense {
+    border-bottom: 1px solid #eee;
+}
+
+.expense.payment {
+    line-height: 0px;
+}
+
+.expense {
     position: relative;
-    z-index: 9;
-    background: #eee;
-    border-bottom: none;
-    padding: 13px 10px 10px;
-    border-bottom: 1px solid #ddd;
-    }
+}
+
+.expense.payment div.main-block {
+    padding: 7px 0px 9px 8px;
+    width: 332px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: none;
+}
+
+.expense div.main-block {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 307px;
+    padding: 9px 5px 6px 68px;
+    position: relative;
+}
+ 
+.expense.payment div.main-block>.header {
+    padding: 1px 0 0 0;
+    margin: 0;
+    line-height: 14px;
+    height: auto;
+    font-size: 12px;
+    font-weight: normal;
+    overflow: visible;
+    display: inline-flex;
+}
+
+.expense.payment div.main-block>.header .description {
+    margin-top: 3px;
+    max-width: 285px;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.expense.payment div.cost {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* width: 75px; */
+}
+
+.expense>div.cost {
+    text-align: right;
+    padding: 11px 10px 12px 5px;
+    font-size: 12px;
+    line-height: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: top;
+    color: #aaa;
+    cursor: pointer;
+
+    /* border: 1px solid red; */
+    width: 100px;
+    margin-right: -30px !important;
+}
+
+.expense.payment div.you {
+    padding-top: 9px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.expense div.you {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    padding: 11px 4px 12px;
+    font-size: 12px;
+    width: 100px;
+    color: #aaa;
+    line-height: 15px;
+    /* margin-left: 20px; */
+
+    /* border: 2px solid blue; */
+    margin-left: 45px;
+}
+
+.expense div.you .negative {
+    color: #ff652f;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
 `
