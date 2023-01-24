@@ -187,7 +187,8 @@ const Modal = (props) => {
 
         if (result.success) {
             props.showAlert(result.message, "success");
-            updateAddExpenseState ? setUpdateAddExpenseState(false) : setUpdateAddExpenseState(true);
+            // updateAddExpenseState ? setUpdateAddExpenseState(false) : setUpdateAddExpenseState(true);
+            setUpdateAddExpenseState(true)
         } else {
             props.showAlert(result.error, "danger");
         }

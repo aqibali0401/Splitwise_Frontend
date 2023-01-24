@@ -18,12 +18,15 @@ const UserState = (props) => {
     if (Object.keys(user).length === 0 && localStorage.getItem('token')) {
         const userDetails = JSON.parse(localStorage.getItem("userDetails"));
         setUser(userDetails.data.user);
+        // setAuth(true);
         // setPayingUser([{ label: userDetails.data.user.name, value: { _id: userDetails.data.user.id, userName: userDetails.data.user.name } }]);
     }
 
+    const [auth, setAuth] = useState(false);
+
 
     return (
-        <UserContext.Provider value={{ user, setUser, callfromModalState }}>
+        <UserContext.Provider value={{ user, setUser, callfromModalState, auth, setAuth }}>
             {props.children}
         </UserContext.Provider>
 

@@ -2,15 +2,11 @@ import React, { useContext, useEffect, useState } from 'react'
 import '../Css/Dashbord.css';
 import GroupContext from '../context/showGroup/groupContext';
 import FriendContext from '../context/showFriends/friendContext';
-import OwnOwedContext from '../context/showOwnOwedAmount/OwnOwedContext';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
-import modalContext from '../context/modal/ModalContext';
 
 
 const Dashbord = (props) => {
-
-    const { setModal, setSettleUpModal, updateAddExpenseState } = useContext(modalContext);
 
     const [style, setStyle] = useState("addFriend");
     const changeStyle = () => {
@@ -46,16 +42,14 @@ const Dashbord = (props) => {
 
     const { groups, fetchGroups } = useContext(GroupContext);
     const { friends, fetchFriends } = useContext(FriendContext);
-    const { totalOwnAmount, totalOwedAmount, fetchOwnOwedAmount, owedAmountsArr, oweAmountArr, fetchOwenOwedAmountFromDiffrentUser } = useContext(OwnOwedContext);
 
     const [friendEmail, setFriendEmail] = useState("");
 
     useEffect(() => {
         fetchGroups();
         fetchFriends();
-        fetchOwnOwedAmount();
-        fetchOwenOwedAmountFromDiffrentUser()
-    }, [updateAddExpenseState]);
+    }, []);
+
 
     // useEffect(() => {
     //     // fetchOwnOwedAmount();
@@ -83,9 +77,6 @@ const Dashbord = (props) => {
         }
     };
 
-    const totalBalance = Math.round((totalOwedAmount - totalOwnAmount) * 100) / 100;
-
-
 
 
     return (
@@ -96,7 +87,7 @@ const Dashbord = (props) => {
                 <div id="center_bars">
                     <div id="left_sidebar">
                         <div id="view_links">
-                            <a href="#/dashboard" id="dashboard_link"><i className="icon-flag"></i> Dashboard</a>
+                            <Link to="/dashbord" id="dashboard_link"><i className="icon-flag"></i> Dashboard</Link>
                             <a href="#/activity" id="notifications_link"><i className="icon-flag"></i> Recent activity</a>
 
                             <div className="expense_filter_links">
@@ -155,7 +146,7 @@ const Dashbord = (props) => {
                                         <>
                                             {friends.map((friend) => {
                                                 return (
-                                                    <Link style={{ 'height': 'auto' }} to="" key={friend.friend._id}
+                                                    <Link style={{ 'height': 'auto' }} to={friend.friend._id} key={friend.friend._id}
                                                         data-active="true">
                                                         <i className="icon-tag"></i>
                                                         {friend.friend.userName ? friend.friend.userName : "Anonymous user"}
@@ -192,7 +183,6 @@ const Dashbord = (props) => {
                         </div>
                     </div>
 
-                    {/* ye vala karna he  */}
 
                     <div id="right_sidebar">
                         <div id="right_sidebar_content">
@@ -243,130 +233,9 @@ const Dashbord = (props) => {
                         </div>
                     </div>
 
+                    {/* Middle Dashbord  */}
                     <div id="center_column">
-                        <div className="dashboard header">
-                            <div className="topbar topPadding0">
-                                <h1>Dashboard</h1>
-                                <div className="actions topPadding0">
-                                    <button onClick={() => { setModal(true) }} className="btn btn-large btn-orange" data-toggle="modal">
-                                        Add an expense
-                                    </button>
-                                    <button onClick={() => { setSettleUpModal(true) }} className="btn btn-large btn-mint" data-toggle="modal">
-                                        Settle up
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="clearfix">
-                            <div id="dashboard_balances">
-                                <div className="total_balances" >
-
-                                    <div className="block" style={{ 'fontSize': '17px', 'lineHeight': '25px', marginBottom: '10px' }}>
-                                        <div className="title">
-                                            total balance
-                                        </div>
-
-                                        <span className="neutral">
-                                            <strong style={{ color: totalBalance ? '#5bc5a7' : '#ff652f' }}>₹ {totalBalance}</strong>
-                                        </span>
-                                    </div>
-                                    <div className="block" style={{ 'fontSize': '17px', 'lineHeight': '25px', marginBottom: '10px' }}>
-                                        <div className="title">
-                                            you owe
-                                        </div>
-                                        <span className="neutral">
-                                            <span>
-                                                <strong style={{ color: totalOwnAmount ? '#ff652f' : '#5bc5a7' }}>₹ {totalOwnAmount}</strong>
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div className="block" style={{ 'fontSize': '17px', 'lineHeight': '25px', marginBottom: '10px' }}>
-                                        <div className="title">
-                                            you are owed
-                                        </div>
-                                        <span className="neutral">
-                                            <strong style={{ color: totalOwedAmount ? '#5bc5a7' : '#ff652f' }}>₹ {totalOwedAmount}</strong>
-                                        </span>
-                                    </div>
-
-                                </div>
-
-                                <h2 style={{ 'position': 'relative' }}>
-                                    you owe
-                                    <span className="right">you are owed</span>
-
-                                </h2>
-
-                                <div className="summary">
-                                    <div id="people_summary">
-
-                                        {
-                                            (oweAmountArr.length <= 0 && owedAmountsArr.length <= 0) ?
-
-                                                <div className="img" data-original-title="">
-                                                    <img
-                                                        src="https://assets.splitwise.com/assets/fat_rabbit/person-2d59b69b3e7431884ebec1a55de75a4153a17c4050e6b50051ca90412e72cf96.png" />
-                                                </div>
-                                                : ''
-                                        }
-
-                                        <div className="list">
-                                            <div className="negatives">
-                                                <ul>
-                                                    {oweAmountArr.map((user, i) => {
-                                                        return (
-                                                            <li className="relationship" key={i}>
-                                                                <a href="#/friends/53828957">
-                                                                    <img src="https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-ruby46-100px.png"
-                                                                        alt="Avatar" />
-                                                                    <div className="name">{user.userName}</div>
-                                                                    <div className="balance i_owe">
-                                                                        you owe
-                                                                        <span className="amount">&nbsp;₹ {Math.round((user.amount) * 100) / 100}</span>
-                                                                    </div>
-
-                                                                </a>
-                                                            </li>
-                                                        )
-                                                    })
-                                                    }
-                                                </ul>
-
-                                            </div>
-
-                                            <div className="positives">
-
-                                                <ul>
-                                                    {owedAmountsArr.map((user, i) => {
-                                                        return (
-                                                            <li className="relationship" key={i}>
-                                                                <Link href="#/friends/59872089">
-                                                                    <img src="https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-ruby12-100px.png"
-                                                                        alt="Avatar" />
-                                                                    <span className="name">{user.userName}</span><br />
-                                                                    <span className="balance owes_me">
-                                                                        owes you
-                                                                        <span className="amount">&nbsp;₹ {Math.round((user.amount) * 100) / 100}</span>
-                                                                    </span>
-
-                                                                </Link>
-                                                            </li>
-                                                        )
-                                                    })
-                                                    }
-                                                </ul>
-
-                                            </div>
-
-                                            <div className="clearfix"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div id="recent_activity" style={{ display: 'none' }}></div>
-                        </div>
+                        <Outlet />
                     </div>
 
                 </div>

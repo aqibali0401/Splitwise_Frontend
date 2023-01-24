@@ -24,7 +24,8 @@ const FirendState = (props) => {
         const result = await response.json();
         if (!result.error) {
             setFriends(result.result);
-            updateAddExpenseState ? setUpdateAddExpenseState(false) : setUpdateAddExpenseState(true);
+            // updateAddExpenseState ? setUpdateAddExpenseState(false) : setUpdateAddExpenseState(true);
+            // setUpdateAddExpenseState(true)
         }
     };
 

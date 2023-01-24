@@ -14,7 +14,9 @@ const Header = () => {
     const navigate = useNavigate();
     const handleLogout = () => {
         localStorage.removeItem('token');
+        console.log('logout clicked');
         navigate('/login');
+        console.log('logout clicked after');
     }
 
     // const { setUser } = useContext(userContext)

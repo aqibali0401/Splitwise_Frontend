@@ -62,7 +62,8 @@ const SettleUpModal = (props) => {
 
         if (!result.error) {
             props.showAlert(result.message, "success");
-            updateAddExpenseState ? setUpdateAddExpenseState(false) : setUpdateAddExpenseState(true);
+            // updateAddExpenseState ? setUpdateAddExpenseState(false) : setUpdateAddExpenseState(true);
+            setUpdateAddExpenseState(true)
         } else {
             props.showAlert(result.error, "danger");
         }
