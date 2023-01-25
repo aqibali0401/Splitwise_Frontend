@@ -1,8 +1,43 @@
-import React from 'react'
+import React, { useContext, useEffect, useId, useState } from 'react';
 import styled from 'styled-components'
+import userContext from '../context/UserContext/UserContext';
 import '../Css/Dashbord.css';
+import { useHistory, useLocation } from 'react-router-dom';
+
+
+
 
 const UserDashbord = () => {
+
+
+    const { user, userDetails, getClickedFriendDetails, getClickedFriendSettlementDetails, friendExpenseDetails } = useContext(userContext);
+
+    const location = useLocation();
+
+    console.log('user detail', user.id);
+
+
+    const path = location.pathname;
+    const directories = path.split('/');
+    var userId = directories[directories.length - 1];
+
+
+
+
+    useEffect(() => {
+        if (JSON.stringify(userDetails) === '{}') {
+            getClickedFriendDetails(userId);
+        }
+        if (JSON.stringify(friendExpenseDetails) === '[]') {
+            console.log('friend expense detail called-------');
+            getClickedFriendSettlementDetails(userId);
+        }
+    }, [])
+
+    console.log('friendExpenseDetails1111111111111111111111', friendExpenseDetails);
+
+
+
     return (
         <UserDashbordStyle>
 
@@ -10,48 +45,65 @@ const UserDashbord = () => {
             <div className="topbar friend">
                 <img src="https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue27-100px.png" />
                 <h1 title="coolasg971886@gmail.com">
-                    User Name
+                    {Object.keys(userDetails).length !== 0 ? (userDetails.result.userName) : "User Name"}
                 </h1>
             </div>
 
+            <div>
 
-            <div id="expenses">
-                <div id="expenses_list">
-                    <div className="month-divider ">
-                        <span>January 2023</span>
-                    </div>
-                </div>
-            </div>
+                {friendExpenseDetails.map((friendDetail) => {
+                    return (
+                        <>
+                            {/* <div id="expenses">
+                                <div id="expenses_list">
+                                    <div className="month-divider ">
+                                        <span>January 2023</span>
+                                    </div>
+                                </div>
+                            </div> */}
+
+                            <div className="expense">
+                                <div className="summary">
+                                    <div className="expense summary payment involved" data-date="2023-01-21T15:50:57Z">
+                                        <div className="main-block">
+                                            <div className="header">
+                                                <div className="date">{(new Date(friendDetail.date).toString()).split(' ')[1]} <div className="number">{(new Date(friendDetail.date).getDate())}</div></div>
+                                                <img src="https://assets.splitwise.com/assets/api/payment_icon/square/small/offline.png" />
+                                                <span className="description">
+                                                    <span>{friendDetail.paidBy.userName}</span>
+                                                    <span>&nbsp;paid&nbsp; </span>
+                                                    <span>{friendDetail.paidTo.userName}</span>
+                                                    <span>&nbsp; ₹{friendDetail.amount}</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="cost">
+
+                                            {(user.id == friendDetail.paidBy._id) ? <span>you paid</span> : <span>you received</span>}
 
 
 
-            <div className="expense">
-                <div className="summary">
-                    <div className="expense summary payment involved" data-date="2023-01-21T15:50:57Z">
-                        <div className="main-block">
-                            <div className="header">
-                            <div class="date" title="2023-01-22T15:51:48Z">Jan <div class="number">22</div></div>
-                                <img src="https://assets.splitwise.com/assets/api/payment_icon/square/small/offline.png" />
-                                <span className="description">
-                                    ashwani G. paid AQIB A. $100.00
-                                </span>
+                                        </div><div className="you ">
+                                            <span className="negative">₹{friendDetail.amount}</span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div className="users">
+
+                                </div>
                             </div>
-                        </div><div className="cost">
 
-                            you received
+                        </>
 
-                        </div><div className="you ">
-                            <span className="negative">$100.00</span>
-                        </div>
-                    </div>
+                    )
+                }
+                )
 
+                }
 
-                </div>
-                <div className="users">
-
-                </div>
             </div>
-
 
         </UserDashbordStyle>
     )

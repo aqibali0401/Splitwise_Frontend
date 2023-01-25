@@ -1,12 +1,17 @@
 import React, { useContext, useEffect, useState } from 'react'
 import '../Css/Dashbord.css';
 import GroupContext from '../context/showGroup/groupContext';
+import UserContext from '../context/UserContext/UserContext';
 import FriendContext from '../context/showFriends/friendContext';
 import { Link, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 
 
 const Dashbord = (props) => {
+
+    const { groups, fetchGroups } = useContext(GroupContext);
+    const { friends, fetchFriends } = useContext(FriendContext);
+    const { setFriendId, getClickedFriendDetails, getClickedFriendSettlementDetails } = useContext(UserContext)
 
     const [style, setStyle] = useState("addFriend");
     const changeStyle = () => {
@@ -28,7 +33,6 @@ const Dashbord = (props) => {
             body: JSON.stringify({ email })
         });
         const json = await response.json();
-        console.log('invitation result-> ', json);
         if (!json.error) {
             props.showAlert(json.message, "success");
         } else {
@@ -39,9 +43,6 @@ const Dashbord = (props) => {
     const onChange = (e) => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value });
     }
-
-    const { groups, fetchGroups } = useContext(GroupContext);
-    const { friends, fetchFriends } = useContext(FriendContext);
 
     const [friendEmail, setFriendEmail] = useState("");
 
@@ -98,26 +99,23 @@ const Dashbord = (props) => {
                                         <Link to="/addGroup"><i className="icon-plus"></i> Add</Link>
                                     </div>
 
-                                    {groups || groups.length > 0 ?
-                                        <>
+                                    {groups || groups.length > 0 ? <>
 
-                                            {groups.map((group) => {
-                                                return (
+                                        {groups.map((group) => {
+                                            return (
 
-                                                    <Link style={{ 'height': 'auto' }} to="#/groups/32744573" key={group._id}
-                                                        data-active="true">
-                                                        <i className="icon-tag"></i>
-                                                        {group.groupName}
-                                                    </Link>
+                                                <Link style={{ 'height': 'auto' }} to="" key={group._id}
+                                                    data-active="true">
+                                                    <i className="icon-tag"></i>
+                                                    {group.groupName}
+                                                </Link>
 
-                                                )
-                                            })}
-                                        </>
+                                            )
+                                        })}
+                                    </>
                                         :
                                         ""
                                     }
-
-
                                 </div>
 
 
@@ -146,8 +144,7 @@ const Dashbord = (props) => {
                                         <>
                                             {friends.map((friend) => {
                                                 return (
-                                                    <Link style={{ 'height': 'auto' }} to={friend.friend._id} key={friend.friend._id}
-                                                        data-active="true">
+                                                    <Link style={{ 'height': 'auto' }} to={friend.friend._id} key={friend.friend._id} data-active="true" onClick={() => { getClickedFriendDetails(friend.friend._id); getClickedFriendSettlementDetails(friend.friend._id); }}>
                                                         <i className="icon-tag"></i>
                                                         {friend.friend.userName ? friend.friend.userName : "Anonymous user"}
                                                     </Link>
@@ -258,6 +255,8 @@ const DashbordStyle = styled.section`
     background: #fff;
     min-height: auto;
     height: 75vh;
+    height: 100%;
+    min-height: 100vh;
 }
 
 `;
