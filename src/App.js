@@ -45,9 +45,6 @@ function App() {
 
   const navigate = useNavigate();
 
-
-
-
   useEffect(() => {
     if (!auth) {
       navigate('/');

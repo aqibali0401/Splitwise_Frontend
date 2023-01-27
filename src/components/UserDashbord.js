@@ -7,7 +7,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 
 
 
-const UserDashbord = () => {
+const UserDashbord = (props) => {
 
 
     const { user, userDetails, getClickedFriendDetails, getClickedFriendSettlementDetails, friendExpenseDetails } = useContext(userContext);
@@ -22,7 +22,7 @@ const UserDashbord = () => {
     var userId = directories[directories.length - 1];
 
 
-
+    console.log('userId he hamare pass', user.id);
 
     useEffect(() => {
         if (JSON.stringify(userDetails) === '{}') {
@@ -36,17 +36,53 @@ const UserDashbord = () => {
 
     console.log('friendExpenseDetails1111111111111111111111', friendExpenseDetails);
 
+    const sendMaliToRemindFriend = async (e) => {
+        e.preventDefault();
+        const authToken = localStorage.getItem('token');
+
+        const requestOptions = {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'authorization': `Bearer ${authToken}`
+            }
+        };
+
+        const response = await fetch(`http://localhost:5000/api/v1/user/remindUser/${userDetails.result._id}`, requestOptions);
+        const result = await response.json();
+        console.log('SEND MAIL result -> ', result);
+
+        if(!result.sendMail){
+            alert(`${userDetails.result.userName} dosn't owe any amount!!`)
+        }       
+        
+
+        // if (!result.error) {
+        //     props.showAlert(result.message, "success");
+        // } else {
+        //     props.showAlert(result.error, "danger");
+        // }
+    }
+
+
+
+
+
 
 
     return (
         <UserDashbordStyle>
 
 
-            <div className="topbar friend">
-                <img src="https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue27-100px.png" />
-                <h1 title="coolasg971886@gmail.com">
-                    {Object.keys(userDetails).length !== 0 ? (userDetails.result.userName) : "User Name"}
-                </h1>
+            <div className="topbar friend" style={{ justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex' }}>
+                    <img src="https://s3.amazonaws.com/splitwise/uploads/user/default_avatars/avatar-blue27-100px.png" />
+                    <h1>
+                        {Object.keys(userDetails).length !== 0 ? (userDetails.result.userName) : "User Name"}
+                    </h1>
+                </div>
+
+                <button className='remindButton' onClick={(e) => { sendMaliToRemindFriend(e) }}>Remind User</button>
             </div>
 
             <div>
@@ -247,6 +283,13 @@ const UserDashbordStyle = styled.section`
     color: #ff652f;
     font-weight: bold;
     font-size: 16px;
+}
+
+.remindButton{
+    background-color: orange;
+    color: white;
+    border-radius: 5%;
+    padding: 10px;
 }
 
 
