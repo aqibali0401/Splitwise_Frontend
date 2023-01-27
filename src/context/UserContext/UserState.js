@@ -45,7 +45,6 @@ const UserState = (props) => {
     };
 
     const getClickedFriendSettlementDetails = async (userId) => {
-        console.log('friend settlement detail function call');
         const authToken = localStorage.getItem('token');
         const response = await fetch(`http://localhost:5000/api/v1/user/fetchUserSettleExpenses/${userId}`, {
             method: 'GET',

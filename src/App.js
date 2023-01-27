@@ -48,7 +48,6 @@ function App() {
   useEffect(() => {
     if (!auth) {
       navigate('/');
-
     }
   }, [auth])
 
@@ -65,7 +64,7 @@ function App() {
           <Route exact path="/" element={<Home showAlert={showAlert} />} ></Route>
           <Route exact path="/dashbord" element={<><Dashbord showAlert={showAlert} /> <AddExpenseModal showAlert={showAlert} /> <SplitOptions /> <ChoosePayer /> <SettleUpModal showAlert={showAlert} /> <SettlePayer /> <SettleReciver />  </>} >
             <Route index element={<MiddleDashbord />} />
-            <Route  path=':friendId' element={<UserDashbord />} />
+            <Route  path=':friendId' element={<UserDashbord showAlert={showAlert}/>} />
           </Route>
           {/* <Route exact path="/login" element={auth ? <Dashbord /> : <Login showAlert={showAlert} />} ></Route> */}
           <Route exact path="/login" element={<Login showAlert={showAlert} />} ></Route>

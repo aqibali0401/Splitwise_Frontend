@@ -19,29 +19,6 @@ const AddGroup = (props) => {
     const userDetails = JSON.parse(localStorage.getItem("userDetails"));
     const name = userDetails.data.user.name;
 
-    // const getUserDetails = async (e) => {      
-    //     // e.preventDefault()
-    //     const authToken = localStorage.getItem('token');
-    //     const response = await fetch(`http://localhost:5000/api/v1/user/fetchUserDetails`, {
-    //         method: 'GET', // *GET, POST, PUT, DELETE, etc.             
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //             'authorization': `Bearer ${authToken}`
-    //         }
-    //     });
-    //     const userDetails = await response.json();
-    //     console.log("USER DETAILS ----------------", userDetails.result.email);
-    //     // if (json.success) {
-    //     //     navigate('/dashbord');
-    //     //     props.showAlert("Group Added successfully!!", "success");
-    //     //   } else {
-    //     //     props.showAlert("Invalid Details", "danger");
-    //     //   }
-    // }
-
-    // getUserDetails();
-
-
     const handleSave = async (e) => {
         let sendData = {}
         sendData.groupName = groupName;

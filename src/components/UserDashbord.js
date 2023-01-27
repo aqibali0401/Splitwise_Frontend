@@ -13,28 +13,19 @@ const UserDashbord = (props) => {
     const { user, userDetails, getClickedFriendDetails, getClickedFriendSettlementDetails, friendExpenseDetails } = useContext(userContext);
 
     const location = useLocation();
-
-    console.log('user detail', user.id);
-
-
     const path = location.pathname;
     const directories = path.split('/');
     var userId = directories[directories.length - 1];
-
-
-    console.log('userId he hamare pass', user.id);
 
     useEffect(() => {
         if (JSON.stringify(userDetails) === '{}') {
             getClickedFriendDetails(userId);
         }
         if (JSON.stringify(friendExpenseDetails) === '[]') {
-            console.log('friend expense detail called-------');
             getClickedFriendSettlementDetails(userId);
         }
     }, [])
 
-    console.log('friendExpenseDetails1111111111111111111111', friendExpenseDetails);
 
     const sendMaliToRemindFriend = async (e) => {
         e.preventDefault();
@@ -52,16 +43,13 @@ const UserDashbord = (props) => {
         const result = await response.json();
         console.log('SEND MAIL result -> ', result);
 
-        if(!result.sendMail){
-            alert(`${userDetails.result.userName} dosn't owe any amount!!`)
-        }       
         
 
-        // if (!result.error) {
-        //     props.showAlert(result.message, "success");
-        // } else {
-        //     props.showAlert(result.error, "danger");
-        // }
+        if (!result.error) {
+            props.showAlert(result.message, "success");
+        } else {
+            props.showAlert(result.error, "danger");
+        }
     }
 
 
